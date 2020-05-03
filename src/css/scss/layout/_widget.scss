@@ -1,6 +1,7 @@
 .widget {
     background: rgba(0, 0, 0, 0.03);
     padding: 20px 16px;
+    margin: 0 -16px 40px;
 
     &_header {
         display: flex;
@@ -47,11 +48,8 @@
         }
     }
     &_controls {
-        display: none;
-        @include tablet {
-            display: flex;
-            align-items: center;
-        }
+        display: flex;
+        align-items: center;
     }
         
 }

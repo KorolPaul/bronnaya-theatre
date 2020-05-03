@@ -8,7 +8,17 @@ menuToggleElement.addEventListener('click', function(e) {
     menuElement.classList.toggle('opened');
 });
 
-
+/* Mobile header */
+document.addEventListener('scroll' , function(e) {
+    const FIXED_NAVBAR_POSITION = 80;
+    const position = window.scrollY;
+    const fixedModifier = 'fixed-header'
+    if (position > FIXED_NAVBAR_POSITION) {
+        document.body.classList.add(fixedModifier);
+    } else {
+        document.body.classList.remove(fixedModifier);
+    }
+});
 
 /* Slider */
 var carousels = document.querySelectorAll('.carousel');
@@ -22,7 +32,7 @@ if (carousels.length) {
             gap: 74,
             breakpoints: {
                 1920: {
-                    perView: 7
+                    perView: 8
                 },
                 1366: {
                     gap: 54
@@ -31,7 +41,7 @@ if (carousels.length) {
                     gap: 38
                 },
                 768: {
-                    perView: 1,
+                    perView: 3,
                     gap: 30
                 }
             }

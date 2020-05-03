@@ -17,7 +17,6 @@
                     %source(srcset="src/img/logo-mobile.svg" media="(max-width: 767px)")
                     %img(src="src/img/logo.svg" alt="")
 
-        %main.content
             %nav.menu
                 %a.menu-toggle(href="#")
 
@@ -42,6 +41,8 @@
                             %a.social_link.social_link__youtube(href="#")
                             %a.social_link.social_link__tw(href="#")
 
+        %main.content
+
             .partner генеральный партнер театра
                 %a.logo(href="/")
 
@@ -54,22 +55,24 @@
                             %a.spectacle_tag.spectacle_tag__bright(href="/") премьера
                             %a.spectacle_tag(href="/") детский
                     %h2.spectacle_title Кентервильское привидение
-                    .spectacle_content
-                        .spectacle_info
-                            .spectacle_info-column
-                                %p.spectacle_description Сказка по мотивам повести Оскара Уайльда
-                                %a.spectacle_adress(href="#") Центр «На Страстном»
-                            .spectacle_info-column
-                                .spectacle_creators
-                                    %span.spectacle_creators-line Автор: Леонид Зорин
-                                    %span.spectacle_creators-line Режиссёр: Сергей Голомазов
-                                    %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
+                    %p.spectacle_description Сказка по мотивам повести Оскара Уайльда
+                    .spectacle_info
+                        .spectacle_info-column
+                            %a.spectacle_adress(href="#") Центр «На Страстном»
+                        .spectacle_info-column
+                            .spectacle_creators
+                                %span.spectacle_creators-line Автор: Леонид Зорин
+                                %span.spectacle_creators-line Режиссёр: Сергей Голомазов
+                                %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
                             .spectacle_info-rating 16+
-                        .spectacle_controls
-                            .spectacle_controls-column
-                                %button.spectacle_button купить билет
-                            .spectacle_controls-column
-                                %a.spectacle_more-info(href="/") подробнее
+                    .spectacle_controls
+                        .spectacle_controls-column
+                            %button.spectacle_button купить билет
+                        .spectacle_controls-column
+                            %a.spectacle_more-info(href="/") подробнее
+
+                .partner.partner__mobile генеральный партнер театра
+                    %a.logo(href="/")
 
                 .spectacle
                     .spectacle_image-wrapper
@@ -79,17 +82,16 @@
                             %a.spectacle_tag.spectacle_tag__bright(href="/") премьера
                     %h2.spectacle_title Кентервильское привидение
                     %p.spectacle_description Сказка по мотивам повести Оскара Уайльда
-                    .spectacle_content
-                        .spectacle_info
-                            %a.spectacle_adress(href="#") Центр «На Страстном»
-                            .spectacle_creators
-                                %span.spectacle_creators-line Автор: Леонид Зорин
-                                %span.spectacle_creators-line Режиссёр: Сергей Голомазов
-                                %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
-                            .spectacle_info-rating 16+
-                        .spectacle_controls
-                            %button.spectacle_button купить билет
-                            %a.spectacle_more-info(href="/") подробнее
+                    .spectacle_info
+                        %a.spectacle_adress(href="#") Центр «На Страстном»
+                        .spectacle_creators
+                            %span.spectacle_creators-line Автор: Леонид Зорин
+                            %span.spectacle_creators-line Режиссёр: Сергей Голомазов
+                            %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
+                        .spectacle_info-rating 16+
+                    .spectacle_controls
+                        %button.spectacle_button купить билет
+                        %a.spectacle_more-info(href="/") подробнее
 
             .widget.carousel
                 .widget_header
@@ -104,28 +106,28 @@
                     .glide__slides
                         %a.carousel_item.glide__slide(href="#")
                             %img.carousel_item-image(src="src/img/temp/news-1.jpg" alt="")
-                            %span.carousel_item-title ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
+                            %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                         %a.carousel_item.glide__slide(href="#")
                             %img.carousel_item-image(src="src/img/temp/news-2.jpg" alt="")
-                            %span.carousel_item-title Лица победы
+                            %span.carousel_item-title.carousel_item-title__decorated Лица победы
                         %a.carousel_item.glide__slide(href="#")
                             %img.carousel_item-image(src="src/img/temp/news-3.jpg" alt="")
-                            %span.carousel_item-title ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
+                            %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                         %a.carousel_item.glide__slide(href="#")
                             %img.carousel_item-image(src="src/img/temp/news-4.jpg" alt="")
-                            %span.carousel_item-title Лица победы
+                            %span.carousel_item-title.carousel_item-title__decorated Лица победы
                         %a.carousel_item.glide__slide(href="#")
                             %img.carousel_item-image(src="src/img/temp/news-5.jpg" alt="")
-                            %span.carousel_item-title ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
+                            %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                         %a.carousel_item.glide__slide(href="#")
                             %img.carousel_item-image(src="src/img/temp/news-6.jpg" alt="")
-                            %span.carousel_item-title Лица победы
+                            %span.carousel_item-title.carousel_item-title__decorated Лица победы
                         %a.carousel_item.glide__slide(href="#")
                             %img.carousel_item-image(src="src/img/temp/news-7.jpg" alt="")
-                            %span.carousel_item-title ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
+                            %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                         %a.carousel_item.glide__slide(href="#")
                             %img.carousel_item-image(src="src/img/temp/news-5.jpg" alt="")
-                            %span.carousel_item-title Лица победы
+                            %span.carousel_item-title.carousel_item-title__decorated Лица победы
 
             .spectacles
                 .spectacle
@@ -134,33 +136,31 @@
                         %a.spectacle_date(href="/") 6 февраля
                     %h2.spectacle_title Ревизор
                     %p.spectacle_description сцены из романа Льва Толстого «Война и мир»
-                    .spectacle_content
-                        .spectacle_info
-                            %a.spectacle_adress(href="#") Центр «На Страстном»
-                            .spectacle_creators
-                                %span.spectacle_creators-line Автор: Леонид Зорин
-                                %span.spectacle_creators-line Режиссёр: Сергей Голомазов
-                                %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
+                    .spectacle_info
+                        %a.spectacle_adress(href="#") Центр «На Страстном»
+                        .spectacle_creators
+                            %span.spectacle_creators-line Автор: Леонид Зорин
+                            %span.spectacle_creators-line Режиссёр: Сергей Голомазов
+                            %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
                             .spectacle_info-rating 16+
-                        .spectacle_controls
-                            %button.spectacle_button купить билет
-                            %a.spectacle_more-info(href="/") подробнее
+                    .spectacle_controls
+                        %button.spectacle_button купить билет
+                        %a.spectacle_more-info(href="/") подробнее
                 .spectacle
                     .spectacle_image-wrapper
                         %img.spectacle_image(src="src/img/temp/spectacle-2.jpg" alt="")
                         %a.spectacle_date(href="/") 7 февраля
                     %h2.spectacle_title Норма
-                    .spectacle_content
-                        .spectacle_info
-                            %a.spectacle_adress(href="#") Центр «На Страстном»
-                            .spectacle_creators
-                                %span.spectacle_creators-line Автор: Леонид Зорин
-                                %span.spectacle_creators-line Режиссёр: Сергей Голомазов
-                                %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
+                    .spectacle_info
+                        %a.spectacle_adress(href="#") Центр «На Страстном»
+                        .spectacle_creators
+                            %span.spectacle_creators-line Автор: Леонид Зорин
+                            %span.spectacle_creators-line Режиссёр: Сергей Голомазов
+                            %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
                             .spectacle_info-rating 16+
-                        .spectacle_controls
-                            %button.spectacle_button купить билет
-                            %a.spectacle_more-info(href="/") подробнее
+                    .spectacle_controls
+                        %button.spectacle_button купить билет
+                        %a.spectacle_more-info(href="/") подробнее
 
    
             .widget.carousel
@@ -210,34 +210,32 @@
                         %a.spectacle_date(href="/") 8 февраля
                     %h2.spectacle_title Белые ночи
                     %p.spectacle_description сентиментальная история
-                    .spectacle_content
-                        .spectacle_info
-                            %a.spectacle_adress(href="#") Центр «На Страстном»
-                            .spectacle_creators
-                                %span.spectacle_creators-line Автор: Леонид Зорин
-                                %span.spectacle_creators-line Режиссёр: Сергей Голомазов
-                                %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
+                    .spectacle_info
+                        %a.spectacle_adress(href="#") Центр «На Страстном»
+                        .spectacle_creators
+                            %span.spectacle_creators-line Автор: Леонид Зорин
+                            %span.spectacle_creators-line Режиссёр: Сергей Голомазов
+                            %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
                             .spectacle_info-rating 16+
-                        .spectacle_controls
-                            %button.spectacle_button купить билет
-                            %a.spectacle_more-info(href="/") подробнее
+                    .spectacle_controls
+                        %button.spectacle_button купить билет
+                        %a.spectacle_more-info(href="/") подробнее
                 .spectacle
                     .spectacle_image-wrapper
                         %img.spectacle_image(src="src/img/temp/spectacle-2.jpg" alt="")
                         %a.spectacle_date(href="/") 9 февраля
                     %h2.spectacle_title Деревья умирают стоя
                     %p.spectacle_description трагикомедия
-                    .spectacle_content
-                        .spectacle_info
-                            %a.spectacle_adress(href="#") Центр «На Страстном»
-                            .spectacle_creators
-                                %span.spectacle_creators-line Автор: Леонид Зорин
-                                %span.spectacle_creators-line Режиссёр: Сергей Голомазов
-                                %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
+                    .spectacle_info
+                        %a.spectacle_adress(href="#") Центр «На Страстном»
+                        .spectacle_creators
+                            %span.spectacle_creators-line Автор: Леонид Зорин
+                            %span.spectacle_creators-line Режиссёр: Сергей Голомазов
+                            %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
                             .spectacle_info-rating 16+
-                        .spectacle_controls
-                            %button.spectacle_button купить билет
-                            %a.spectacle_more-info(href="/") подробнее
+                    .spectacle_controls
+                        %button.spectacle_button купить билет
+                        %a.spectacle_more-info(href="/") подробнее
 
         %footer.footer
             .social

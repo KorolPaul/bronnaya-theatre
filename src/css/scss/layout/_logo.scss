@@ -1,5 +1,4 @@
 .logo {
-    
     &_image {
         display: block;
         @include tablet {
@@ -13,6 +12,11 @@
         @include desktop-large {
             width: 149px;
             height: 202px;
+        }
+
+        .fixed-header & {
+            width: 25px;
+            height: 33px;
         }
     }
 }
