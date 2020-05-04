@@ -1,4 +1,7 @@
 .carousel {
+    &_item {
+        display: block;
+    }
     &_item-image {
         height: 124px;
         width: 124px;
@@ -56,9 +59,10 @@
             }
         }
     }
-    &_subtitle {
+    &_item-subtitle {
         font-size: 12px;
         line-height: 16px;
+        font-weight: normal;
         @include desktop-large {
             font-size: 16px;
             line-height: 22px;

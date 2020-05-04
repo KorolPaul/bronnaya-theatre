@@ -20,34 +20,61 @@ document.addEventListener('scroll' , function(e) {
     }
 });
 
-/* Slider */
+/* Carousel */
+
 var carousels = document.querySelectorAll('.carousel');
 if (carousels.length) {
     for (let i = 0; i < carousels.length; i++) {
-        const carousel = carousels[i];
-
-        var glide = new Glide(carousel, {
-            type: 'carousel',
-            perView: 9,
-            gap: 74,
-            breakpoints: {
+        const carousel = carousels[i].querySelector('.carousel_track');
+        const carouselControls = carousels[i].querySelector('.carousel_controls');
+        const slider = tns({
+            container: carousel,
+            items: 3,
+            gutter: 30,
+            nav: false,
+            mouseDrag: true,
+            loop: true,
+            controlsContainer: carouselControls,
+            responsive: {
                 1920: {
-                    perView: 8
+                    items: 9,
+                    gutter: 74
                 },
                 1366: {
-                    gap: 54
+                    gutter: 38
                 },
                 1260: {
-                    gap: 38
+                    gutter: 54
                 },
                 768: {
-                    perView: 3,
-                    gap: 30
+                    items: 8
                 }
             }
         });
-        glide.mount();
-        
+    }
+}
+
+/* Slider */
+var sliders = document.querySelectorAll('.slider');
+if (sliders.length) {
+    for (let i = 0; i < sliders.length; i++) {
+        const slider = sliders[i].querySelector('.slider_track');
+
+        tns({
+            container: slider,
+            items: 1,
+            nav: true,
+            controls: false,
+            mouseDrag: true,
+            loop: true,
+            responsive: {
+                768: {
+                    items: 2,
+                    autoWidth: true,
+                    gutter: 16
+                }
+            }
+        });
     }
 }
 

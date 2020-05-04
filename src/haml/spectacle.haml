@@ -45,10 +45,21 @@
 
             .event
                 .event_image-wrapper
-                    %img.event_image(src="src/img/temp/spectacle-1.jpg" alt="")
                     .event_tags
                         %a.event_tag.event_tag__bright(href="/") премьера
                         %a.event_tag(href="/") детский
+                    .slider
+                        .slider_track
+                            .slider_item
+                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
+                            .slider_item
+                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
+                            .slider_item
+                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
+                            .slider_item
+                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
+                        
+
                 %h2.event_title Кентервильское привидение
                 %p.event_subtitle Сказка по мотивам повести Оскара Уайльда
                 .event_info
@@ -153,7 +164,7 @@
                 %a.footer_menu-link(href="#") контакты
 
         
-        %script(src="src/js/glide.min.js")
+        %script(src="src/js/tiny-slider.min.js")
         %script(src="src/js/main.js")
                                 
 
