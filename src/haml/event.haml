@@ -44,7 +44,7 @@
         %main.content
 
             .event
-                .event_image-wrapper
+                .event_slider-wrapper
                     .event_tags
                         %a.event_tag.event_tag__bright(href="/") премьера
                         %a.event_tag(href="/") детский
@@ -60,7 +60,7 @@
                                 %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
                         
 
-                %h2.event_title Кентервильское привидение
+                %h1.event_title Кентервильское привидение
                 %p.event_subtitle Сказка по мотивам повести Оскара Уайльда
                 .event_info
                     .event_info-column
@@ -68,7 +68,7 @@
                     .event_info-column
                         %a.event_adress(href="#") ТКЗ «Дворец на Яузе»
                     .event_info-column
-                        .event_info-rating 12+
+                        .event_rating 12+
                 %table.event_meta
                     %tbody
                         %tr
@@ -81,27 +81,29 @@
                             %td Режиссер
                             %td Геннадий Сайфулин
 
-                .event_people
-                    %a.event_people-item(href="#")
-                        %img.event_people-image(src="src/img/temp/people-1.jpg" alt="")
-                        %span.event_people-title Иван Николаев
-                    %a.event_people-item(href="#")
-                        %img.event_people-image(src="src/img/temp/people-2.jpg" alt="")
-                        %span.event_people-title Марья Иванова
-                    %a.event_people-item(href="#")
-                        %img.event_people-image(src="src/img/temp/people-1.jpg" alt="")
-                        %span.event_people-title Иван Николаев
-                    %a.event_people-item(href="#")
-                        %img.event_people-image(src="src/img/temp/people-2.jpg" alt="")
-                        %span.event_people-title Марья Иванова
-                    %a.event_people-item(href="#")
-                        %img.event_people-image(src="src/img/temp/people-1.jpg" alt="")
-                        %span.event_people-title Иван Николаев
-                    %a.event_people-item(href="#")
-                        %img.event_people-image(src="src/img/temp/people-2.jpg" alt="")
-                        %span.event_people-title Марья Иванова
+                .people
+                    %span.people_title В спектакле заняты
+                    .people_items
+                        %a.people_item(href="#")
+                            %img.people_item-image(src="src/img/temp/people-1.jpg" alt="")
+                            %span.people_item-title Марья Иванова
+                        %a.people_item(href="#")
+                            %img.people_item-image(src="src/img/temp/people-2.jpg" alt="")
+                            %span.people_item-title Иван Николаев
+                        %a.people_item(href="#")
+                            %img.people_item-image(src="src/img/temp/people-1.jpg" alt="")
+                            %span.people_item-title Марья Иванова
+                        %a.people_item(href="#")
+                            %img.people_item-image(src="src/img/temp/people-2.jpg" alt="")
+                            %span.people_item-title Иван Николаев
+                        %a.people_item(href="#")
+                            %img.people_item-image(src="src/img/temp/people-1.jpg" alt="")
+                            %span.people_item-title Марья Иванова
+                        %a.people_item(href="#")
+                            %img.people_item-image(src="src/img/temp/people-2.jpg" alt="")
+                            %span.people_item-title Иван Николаев    
 
-                    %button.event_people-more весь коллектив и исполнители
+                    %button.people_more весь коллектив и исполнители
 
                 .tickets
                     %table
@@ -134,12 +136,12 @@
                     %span.press_title пресса о спектакле
                     .quote
                         %p.quote_text «Норма» Максима Диденко, поставленная силами Театра на Малой Бронной и Мастерской Брусникина: советская реальность, поданная в звуковых, визуальных, языковых и вкусовых ощущениях. Театральный критик Алла Шендерова посмотрела спектакль по знаменитому роману Владимира Сорокина и задумалась, почему есть норму
-                        %span.press_date 9 декабря 2019, m24.ru
-                        %a(href="#").press_link
+                        %span.quote_date 9 декабря 2019, m24.ru
+                        %a.quote_link(href="#") читать полностью
                     .quote
                         %p.quote_text Одна из самых громких театральных премьер осени — спектакль по мотивам первого романа Владимира Сорокина «Норма», поставленный Максимом Диденко. В интервью Forbes Life режиссер рассказал о том, почему писатель отказался смотреть постановку до премьеры, чем эволюция
-                        %span.press_date 9 декабря 2019, m24.ru
-                        %a(href="#").press_link
+                        %span.quote_date 9 декабря 2019, m24.ru
+                        %a.quote_link(href="#") читать полностью
 
                 .share
                     
