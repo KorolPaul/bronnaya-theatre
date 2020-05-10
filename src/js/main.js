@@ -1,6 +1,6 @@
 /* Mobile layout check */
 if (window.innerWidth < 768) {
-    document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=320')
+    document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=375, user-scalable=0')
 }
 /* Menu toggle */
 const menuElement = document.querySelector('.menu');
@@ -28,13 +28,11 @@ function touchMove(event) {
     endPosition = event.touches[0].pageY;
 }
 
-document.addEventListener("touchmove", function(e) {
+document.addEventListener("scroll", function(e) {
     const FIXED_NAVBAR_POSITION = 80;
     const position = window.scrollY;
     const fixedModifier = 'fixed-header';
     const isScrollUp = startPosition < endPosition;
-    console.log(isScrollUp)
-    
 
     if (position > FIXED_NAVBAR_POSITION && isScrollUp) {
         document.body.classList.add(fixedModifier);
@@ -49,7 +47,7 @@ if (carousels.length) {
     for (let i = 0; i < carousels.length; i++) {
         const carousel = carousels[i].querySelector('.carousel_track');
         const carouselControls = carousels[i].querySelector('.carousel_controls');
-        const slider = tns({
+        tns({
             container: carousel,
             items: 2.4,
             gutter: 30,
@@ -59,18 +57,22 @@ if (carousels.length) {
             controlsContainer: carouselControls,
             responsive: {
                 1920: {
+                    gutter: 74,
                     items: 9,
-                    gutter: 74
                 },
                 1366: {
-                    gutter: 38
+                    gutter: 38,
+                    items: 8,
                 },
                 1260: {
-                    gutter: 54
+                    gutter: 54,
+                },
+                1024: {
+                    items: 6
                 },
                 768: {
                     autoWidth: true,
-                    items: 8
+                    items: 5
                 }
             }
         });
@@ -82,23 +84,42 @@ var sliders = document.querySelectorAll('.slider');
 if (sliders.length) {
     for (let i = 0; i < sliders.length; i++) {
         const slider = sliders[i].querySelector('.slider_track');
+        const currentSlideEl = document.querySelector('.slider_counter');
 
-        tns({
+        const setcounter = function (info) {
+            currentSlideEl.innerText = `${info.displayIndex}/${info.pages}`;
+        }
+
+        const sliderTNS = tns({
+            autoplay: true,
+            autoplayButton: false,
+            autoplayButtonOutput: false,
+            animateDelay: 3000,
             container: slider,
             items: 1,
             nav: true,
             controls: false,
             mouseDrag: true,
             loop: true,
+            autoWidth: true,
             responsive: {
                 768: {
-                    items: 1.5,
-                    autoWidth: true,
+                    items: 6.3,
                     gutter: 16,
                     nav: false,
+                },
+                1260: {
+                    gutter: 32,
+                },
+                1260: {
+                    gutter: 46,
                 }
-            }
+            },
+            onInit: setcounter
         });
+
+        sliderTNS.events.on('transitionEnd', setcounter);
+        sliderTNS.events.on('transitionEnd', setcounter);
     }
 }
 
@@ -114,6 +135,7 @@ if (galleries.length) {
             autoplayButton: false,
             autoplayButtonOutput: false,
             container: gallery,
+            speed: 1000,
             items: 1,
             nav: false,
             controls: false,
@@ -129,8 +151,19 @@ for (let i = 0; i < spectacleTitles.length; i++) {
     const title = spectacleTitles[i];
     const titleTextLength = title.innerText.length;
     if (titleTextLength < 10) {
-        title.classList.add('spectacle_title__big')
+        title.classList.add('spectacle_title__big');
     } else if(titleTextLength > 40) {
-        title.classList.add('spectacle_title__small')
+        title.classList.add('spectacle_title__small');
     } 
 }
+
+/* Event page */
+document.querySelector('.event_info-more').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const hidedElements = document.querySelectorAll('.event_hided-info');
+    for (let i = 0; i < hidedElements.length; i++) {
+        hidedElements[i].classList.remove('event_hided-info');
+    }
+    e.target.style.display = 'none';
+})

@@ -16,17 +16,16 @@
                 %picture.logo_image
                     %source(srcset="src/img/logo-mobile.svg" media="(max-width: 767px)")
                     %img(src="src/img/logo.svg" alt="")
+                %img.logo_image__mobile-fixed(src="src/img/logo-mobile-small.svg" alt="")
 
             %nav.menu
-                %a.menu-toggle(href="#")
+                .menu-toggle
 
                 %a.menu_link.menu_link__mobile(href="/") купить билет
                 %a.menu_link.menu_link__mobile(href="/") адреса
                 %a.menu_link(href="/") афиша
                 %a.menu_link(href="/") о театре
-                %a.menu_link(href="/") новости
-                %a.menu_link(href="/") магазин
-                %a.menu_link(href="/") архив
+                %a.menu_link(href="/") события
                 %a.menu_link(href="/") пресса о театре
                 %a.menu_link(href="/") клуб волонтеров
                 %a.menu_link(href="/") партнеры театра
@@ -39,7 +38,6 @@
                             %a.social_link.social_link__fb(href="#")
                             %a.social_link.social_link__insta(href="#")
                             %a.social_link.social_link__youtube(href="#")
-                            %a.social_link.social_link__tw(href="#")
 
         %main.content.content__big-indent  
 
@@ -108,11 +106,29 @@
                                     %img(src="src/img/nauka-i-sport.svg" alt="")
 
                 .spectacle
-                    .spectacle_image-wrapper
-                        %img.spectacle_image(src="src/img/temp/spectacle-2.jpg" alt="")
-                        %a.spectacle_date(href="/") завтра
-                        .spectacle_tags
-                            %a.spectacle_tag.spectacle_tag__bright(href="/") премьера
+                    .spectacle_gallery
+                        .gallery
+                            .gallery_items
+                                .gallery_item
+                                    .spectacle_image-wrapper
+                                        %img.spectacle_image(src="src/img/temp/spectacle-1.jpg" alt="")
+                                        %a.spectacle_date(href="/") сегодня
+                                        .spectacle_tags
+                                            %a.spectacle_tag.spectacle_tag__bright(href="/") премьера
+                                            %a.spectacle_tag(href="/") детский
+                                .gallery_item
+                                    .spectacle_image-wrapper
+                                        %img.spectacle_image(src="src/img/temp/spectacle-2.jpg" alt="")
+                                        %a.spectacle_date(href="/") сегодня
+                                        .spectacle_tags
+                                            %a.spectacle_tag(href="/") детский
+                                .gallery_item
+                                    .spectacle_image-wrapper
+                                        %img.spectacle_image(src="src/img/temp/spectacle-1.jpg" alt="")
+                                        %a.spectacle_date(href="/") сегодня
+                                        .spectacle_tags
+                                            %a.spectacle_tag.spectacle_tag__bright(href="/") премьера
+                                            %a.spectacle_tag(href="/") детский
                     .spectacle_header
                         %h2.spectacle_title Кентервильское привидение
                         %p.spectacle_description Сказка по мотивам повести Оскара Уайльда
@@ -138,52 +154,68 @@
 
                 .carousel_track
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-1.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-1.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-2.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-2.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated Лица победы
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-3.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-3.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-4.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-4.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated Лица победы
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-5.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-5.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-6.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-6.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated Лица победы
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-7.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-7.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-5.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-5.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated Лица победы
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-1.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-1.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-2.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-2.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated Лица победы
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-3.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-3.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-4.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-4.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated Лица победы
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-5.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-5.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-6.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-6.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated Лица победы
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-7.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-7.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image(src="src/img/temp/news-5.jpg" alt="")
+                        .carousel_item-image-wrapper
+                            %img.carousel_item-image(src="src/img/temp/news-5.jpg" alt="")
                         %span.carousel_item-title.carousel_item-title__decorated Лица победы
 
             .spectacles
@@ -249,49 +281,62 @@
                         %a.widget_link(href="#") читать все
                 .carousel_track
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-1.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-1.jpg" alt="")
                         %span.carousel_item-title Иван Николаев
                         %span.carousel_item-subtitle Заслуженный артист РФ
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-2.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-2.jpg" alt="")
                         %span.carousel_item-title Марья Иванова
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-1.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-1.jpg" alt="")
                         %span.carousel_item-title Иван Николаев
                         %span.carousel_item-subtitle Заслуженный артист РФ
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-2.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-2.jpg" alt="")
                         %span.carousel_item-title Марья Иванова
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-1.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-1.jpg" alt="")
                         %span.carousel_item-title Иван Николаев
                         %span.carousel_item-subtitle Заслуженный артист РФ
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-2.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-2.jpg" alt="")
                         %span.carousel_item-title Марья Иванова
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-1.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-1.jpg" alt="")
                         %span.carousel_item-title Иван Николаев
                         %span.carousel_item-subtitle Заслуженный артист РФ
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-2.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-2.jpg" alt="")
                         %span.carousel_item-title Марья Иванова
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-2.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-1.jpg" alt="")
                         %span.carousel_item-title Марья Иванова
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-1.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-2.jpg" alt="")
                         %span.carousel_item-title Иван Николаев
                         %span.carousel_item-subtitle Заслуженный артист РФ
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-2.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-1.jpg" alt="")
                         %span.carousel_item-title Марья Иванова
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-1.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-2.jpg" alt="")
                         %span.carousel_item-title Иван Николаев
                         %span.carousel_item-subtitle Заслуженный артист РФ
                     %a.carousel_item(href="#")
-                        %img.carousel_item-image.carousel_item-image__rounded(src="src/img/temp/people-2.jpg" alt="")
+                        .carousel_item-image-wrapper.carousel_item-image-wrapper__rounded
+                            %img.carousel_item-image(src="src/img/temp/people-1.jpg" alt="")
                         %span.carousel_item-title Марья Иванова
 
 

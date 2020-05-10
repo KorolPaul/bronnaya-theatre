@@ -1,6 +1,6 @@
 .widget {
     background: rgba(0, 0, 0, 0.03);
-    padding: 20px 16px;
+    padding: 20px 16px 24px;
     margin: 0 -16px 40px;
     @include tablet {
         margin-left: 0;
@@ -48,8 +48,7 @@
     }
     &_link {
         font-size: 14px;
-        line-height: 46px;
-        text-decoration: underline;
+        line-height: 1.3;
         margin: 0 0 0 40px;
         @include tablet {
             font-size: 12px;
