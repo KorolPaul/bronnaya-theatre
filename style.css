@@ -384,13 +384,14 @@ template {
 }
 
 html {
+  font-size: 1px;
   scroll-behavior: smooth;
 }
 
 body {
   background: #F2F2F2;
   color: #040304;
-  font: 14px/24px Gerbera, Helvetica, Arial, sans-serif;
+  font: 14rem/24px Gerbera, Helvetica, Arial, sans-serif;
 }
 
 @media all and (min-width: 767px) {
@@ -623,7 +624,7 @@ input[type="tel"] {
   border-radius: 8px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font: 14px Gerbera, Helvetica, Arial, sans-serif;
+  font: 14rem Gerbera, Helvetica, Arial, sans-serif;
   padding: 7px 25px 7px;
   width: 100%;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.17) inset;
@@ -719,7 +720,7 @@ textarea {
   background: #1e2124;
   color: #040304;
   border: 1px solid #fff;
-  font: 14px Gerbera, Helvetica, Arial, sans-serif;
+  font: 14rem Gerbera, Helvetica, Arial, sans-serif;
   padding: 20px 11px;
   height: 120px;
   -webkit-box-sizing: border-box;
@@ -3465,6 +3466,18 @@ h3,
   padding-left: 27px;
 }
 
+@media all and (min-width: 1259px) {
+  .event_duration {
+    padding-left: 50px;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .event_duration {
+    padding-left: 72px;
+  }
+}
+
 .event_duration::before {
   content: "";
   position: absolute;
@@ -3473,6 +3486,21 @@ h3,
   width: 20px;
   height: 20px;
   background: url(src/img/clock.svg) no-repeat 0 0/contain;
+}
+
+@media all and (min-width: 1259px) {
+  .event_duration::before {
+    width: 34px;
+    height: 34px;
+    background-size: 100% auto;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .event_duration::before {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .event_adress {
@@ -3487,6 +3515,23 @@ h3,
   width: 20px;
   height: 40px;
   background: url(src/img/marker.svg) no-repeat 0 0/contain;
+}
+
+@media all and (min-width: 1259px) {
+  .event_adress::before {
+    width: 34px;
+    height: 40px;
+    left: -50px;
+    background-size: 100% auto;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .event_adress::before {
+    width: 48px;
+    height: 57px;
+    left: -72px;
+  }
 }
 
 .event_adress-link {
