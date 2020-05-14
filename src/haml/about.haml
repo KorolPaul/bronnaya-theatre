@@ -42,64 +42,148 @@
                             %a.social_link.social_link__tw(href="#")
 
         %main.content
-            %span.content_title афиша
+            %span.content_title о театре
 
-            .event
-                .event_slider-wrapper
-                    .event_tags
-                        %a.event_tag.event_tag__bright(href="/") премьера
-                        %a.event_tag(href="/") детский
-                    .slider
-                        .slider_counter
-                        .slider_track
-                            .slider_item
-                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
-                            .slider_item
-                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
-                            .slider_item
-                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
-                            .slider_item
-                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
-                        
+            .accordion
+                .accordion_item
+                    .accordion_header(data-tab="1")
+                        %span.accordion_header-title Адреса
+                    .accordion_content
 
-                .event_header
-                    %h1.event_title Кентервильское привидение
-                    %p.event_subtitle Сказка по мотивам повести Оскара Уайльда
+                        .accordion.accordion__secondary
+                            .accordion_item
+                                .accordion_header(data-tab="adress-1")
+                                    %span.accordion_header-title ТКЗ «Дворец на Яузе»
+                                .accordion_content
+                                    .place
+                                        .place_adress
+                                            .place_metro Электрозаводская Площадь Журавлева, 1
+                                            %button.place_scheme-button посмотреть схему зала
+                                        .place_map-holder
+                                            %div(style="position:relative;overflow:hidden;")
+                                                %a(href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;") Москва
+                                                %a(href="https://yandex.by/maps/213/moscow/house/ploshchad_zhuravlyova_10/Z04YcQdkTEYPQFtvfXt5cn5rYg==/?ll=37.704749%2C55.783214&utm_medium=mapframe&utm_source=maps&z=18.2" style="color:#eee;font-size:12px;position:absolute;top:14px;") Площадь Журавлёва, 10 — Яндекс.Карты
+                                                %iframe(src="https://yandex.by/map-widget/v1/-/C8sMQWlE" width="560" height="400" frameborder="0" allowfullscreen="true" style="position:relative;")
+                                            .place_map-buttons
+                                                %button.place_map-button открыть в Google Maps
+                                                %button.place_map-button открыть в Яндекс.Картах
+                            .accordion_item
+                                .accordion_header(data-tab="adress-2")
+                                    %span.accordion_header-title Театральный центр  «На Страстном»
+                                .accordion_content
+                                    .place
+                                        .place_adress
+                                            .place_metro Электрозаводская Площадь Журавлева, 1
+                                            %button.place_scheme-button посмотреть схему зала
+                                        .place_map-holder
+                                            %div(style="position:relative;overflow:hidden;")
+                                                %a(href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;") Москва
+                                                %a(href="https://yandex.by/maps/213/moscow/house/ploshchad_zhuravlyova_10/Z04YcQdkTEYPQFtvfXt5cn5rYg==/?ll=37.704749%2C55.783214&utm_medium=mapframe&utm_source=maps&z=18.2" style="color:#eee;font-size:12px;position:absolute;top:14px;") Площадь Журавлёва, 10 — Яндекс.Карты
+                                                %iframe(src="https://yandex.by/map-widget/v1/-/C8sMQWlE" width="560" height="400" frameborder="0" allowfullscreen="true" style="position:relative;")
+                                            .place_map-buttons
+                                                %button.place_map-button открыть в Google Maps
+                                                %button.place_map-button открыть в Яндекс.Картах
+                            .accordion_item.accordion_item__disabled
+                                .accordion_header(data-tab="adress-3")
+                                    %span.accordion_header-title Основная сцена
+                                    %span.accordion_header-subtitle открытие 1 сентября 2021 года
+                            .accordion_item.accordion_item__disabled
+                                .accordion_header(data-tab="adress-3")
+                                    %span.accordion_header-title Малая сцена
+                                    %span.accordion_header-subtitle открытие 1 сентября 2021 года
 
-                .event_content
-                    .event_main-info
-                        .event_info
-                            .event_info-column
-                                %span.event_duration 2 часа 30 минут с антрактом
-                            .event_info-column
-                                %span.event_adress
-                                    %a.event_adress-link(href="#") ТКЗ «Дворец на Яузе»
-                            .event_info-column
-                                .event_rating 12+
-                        %table.event_meta
-                            %tbody
-                                %tr
-                                    %td Официальная премьера
-                                    %td 5 февраля 2017
-                                %tr
-                                    %td Автор
-                                    %td Федор Достоевский
-                                %tr
-                                    %td Режиссер
-                                    %td 
-                                        %a(href="#") Геннадий Сайфулин
-                            %tbody.event_hided-info
-                                %tr
-                                    %td Автор
-                                    %td Федор Достоевский
-                                %tr
-                                    %td Режиссер
-                                    %td 
-                                        %a(href="#") Геннадий Сайфулин
 
+                .accordion_item
+                    .accordion_header(data-tab="2")
+                        %span.accordion_header-title контакты
+                    .accordion_content
+                        .contacts
+                            .contacts_section
+                                .contacts_row
+                                    .contacts_left
+                                    .contacts_right
+                                        %p.contacts_description Официальный сайт Государственного бюджетного учреждения культуры города Москвы «Московский драматический театр на Малой Бронной» / ИНН 7703001970
+                                        %span электронный адрес
+                                .contacts_row
+                                    .contacts_left
+                                        %a.contacts_title(href="mailto:#mbronnaya@theatre.ru") mbronnaya@theatre.ru
+                            .contacts_section
+                                .contacts_row
+                                    .contacts_left
+                                        %span.contacts_title Касса
+                                    .contacts_right
+                                        %a(href="tel:+7(495)690-40-93").contacts_title +7 (495) 690-40-93
+                                        %table.contacts_working_hours
+                                            %tbody
+                                                %tr
+                                                    %td  Открыта ежедневно
+                                                    %td  12:00 – 19:30
+                                                %tr
+                                                    %td  Перерыв
+                                                    %td  15:00 – 16:00
+                            .contacts_section
+                                .contacts_row
+                                    .contacts_left
+                                        %span.contacts_title(href="mailto:#mbronnaya@theatre.ru") Заказ, бронирование и доставка билетов
+                                .contacts_row
+                                    .contacts_left
+                                    .contacts_right
+                                        %a.contacts_title(href="tel:+7(495)690-59-53") +7 (495) 690-59-53
+                                        %a.contacts_title(href="tel:+7(495)690 43 97") +7 (495) 690 43 97
+                                        %a.contacts_title(href="tel:+7(905)544-14-21") +7 (905) 544-14-21
+
+                            .contacts_section
+                                .contacts_row
+                                    .contacts_left
+                                        %span.contacts_subtitle Художественный руководитель
+                                    .contacts_right
+                                        %span Константин Юрьевич Богомолов
+                                        %a.contacts_title(href="mailto:mail@gmail.com") mail@gmail.com
+                                .contacts_row
+                                    .contacts_left
+                                        %span.contacts_subtitle Директор
+                                    .contacts_right
+                                        %span Константин Юрьевич Богомолов
+                                        %a.contacts_title(href="mailto:mail@gmail.com") mail@gmail.com
+                                .contacts_row
+                                    .contacts_left
+                                        %span.contacts_subtitle Заместитель директора
+                                    .contacts_right
+                                        %span Ирина Александровна Грачева 
+                                        %a.contacts_title(href="tel:690-04-51") 690-04-51 / 1-29
+                                .contacts_row
+                                    .contacts_left
+                                        %span.contacts_subtitle Заместитель директора
+                                    .contacts_right
+                                        %span Лариса Васильевна Гладкая 
+                                        %a.contacts_title(href="tel:690-04-51") 690-19-48 / 1-05
+                                .contacts_row
+                                    .contacts_left
+                                        %span.contacts_subtitle Заместитель директора
+                                    .contacts_right
+                                        %span Ирина Александровна Грачева 
+                                        %a.contacts_title(href="tel:690-04-51") 690-04-51 / 1-29
+                                .contacts_row
+                                    .contacts_left
+                                        %span.contacts_subtitle Заместитель директора
+                                    .contacts_right
+                                        %span Арина Владимировна Богданчик
+                                        %a.contacts_title(href="tel:690-04-51") 690-19-48 / 1-03
+
+
+                .accordion_item
+                    .accordion_header(data-tab="3")
+                        %span.accordion_header-title Люди театра
+                    .accordion_content
                         .people
                             %span.people_title В спектакле заняты
                             .people_items
+                                %a.people_item(href="#")
+                                    %img.people_item-image(src="src/img/temp/people-1.jpg" alt="")
+                                    %span.people_item-title Марья Иванова
+                                %a.people_item(href="#")
+                                    %img.people_item-image(src="src/img/temp/people-2.jpg" alt="")
+                                    %span.people_item-title Иван Николаев
                                 %a.people_item(href="#")
                                     %img.people_item-image(src="src/img/temp/people-1.jpg" alt="")
                                     %span.people_item-title Марья Иванова
@@ -128,102 +212,32 @@
                                 %a.people_item(href="#")
                                     %img.people_item-image(src="src/img/temp/people-1.jpg" alt="")
                                     %span.people_item-title Марья Иванова
-
+                                %a.people_item(href="#")
+                                    %img.people_item-image(src="src/img/temp/people-1.jpg" alt="")
+                                    %span.people_item-title Марья Иванова
+                
+                .accordion_item
+                    .accordion_header(data-tab="4")
+                        %span.accordion_header-title история театра
+                    .accordion_content
+                        .slider
+                            .slider_track
+                                .slider_item
+                                    %img.slider_image(src="src/img/temp/history-1.jpg" alt="")
+                                .slider_item
+                                    %img.slider_image(src="src/img/temp/history-2.jpg" alt="")
+                                .slider_item
+                                    %img.slider_image(src="src/img/temp/history-1.jpg" alt="")
+                                .slider_item
+                                    %img.slider_image(src="src/img/temp/history-2.jpg" alt="")
                         
+                        %h2 В 1945 году на театральной карте столицы появился новый творческий коллектив — московский драматический театр, который возглавил режиссер Cергей Майоров. 
+                        .contacts
+                            .contacts_row
+                                .contacts_right
+                                    %p Основу новой труппы составили актеры разных московских театров и несколько выпускников театрального училища им. М. С. Щепкина. Театру было предоставлено здание на Спартаковской улице, 26, рядом со станцией метро «Бауманская». Репетиции шли параллельно с реконструкцией здания театра, двери которого открылись для зрителей 9 марта 1946 года, когда был показан первый спектакль («Золотой обруч», пьеса М. Козакова и А. Мариенгофа).
+                                    %span электронный адрес
                         
-                        %button.event_info-more весь коллектив и исполнители
-
-                    .event_tickets
-                        .tickets
-                            %table
-                                %tbody
-                                    %tr
-                                        %td
-                                            %span.tickets_title сегодня, 
-                                                %span 30 сентября 
-                                                %span.tickets_time 19:00
-                                            %span.tickets_price от 2500₽
-                                        %td 
-                                            %span.tickets_unavailible билетов нет
-                                    %tr
-                                        %td
-                                            %span.tickets_title завтра,
-                                                %span 1 октября 
-                                                %span.tickets_time 20:00
-                                            %span.tickets_price от 2500₽
-                                        %td 
-                                            %button.tickets_button купить
-                                    %tr
-                                        %td
-                                            %span.tickets_title 
-                                                %span 3 октября
-                                                %span.tickets_time 19:00
-                                            %span.tickets_price от 2500₽
-                                        %td 
-                                            %button.tickets_button купить
-                            %button.tickets_more все даты
-                    
-                    .event_description
-                        %p В одном небольшом испанском городке при театре работает фирма «Ариэль». Сотрудники фирмы занимаются необычным делом: они доставляют людям на дом... счастье! В этом же городе живет пожилая сеньора, горячо любящая своего единственного внука. Вот уже 20 лет она занята только перепиской с ним - в ее мыслях он предстает блестящим молодым человеком. Искусные актеры готовы подарить бабушке три счастливых дня в компании любимого внука и его молодой жены. Но неожиданное стечение обстоятельств меняет ход запланированных событий…
-                        %p В трагикомической постановке Юрия Иоффе интригующий сюжет вовлекает зрителя в игровой и философский разговор о правде и лжи, о существовании на тонкой грани реальности и вымысла. Можно ли прожить всю жизнь в притворстве и как измерить ценность истинной правды, если она может 
-
-                    .press
-                        %span.press_title пресса о спектакле
-                        .quote
-                            %p.quote_text «Норма» Максима Диденко, поставленная силами Театра на Малой Бронной и Мастерской Брусникина: советская реальность, поданная в звуковых, визуальных, языковых и вкусовых ощущениях. Театральный критик Алла Шендерова посмотрела спектакль по знаменитому роману Владимира Сорокина и задумалась, почему есть норму
-                            %span.quote_date 9 декабря 2019, m24.ru
-                            %a.quote_link(href="#") читать полностью
-                        .quote
-                            %p.quote_text Одна из самых громких театральных премьер осени — спектакль по мотивам первого романа Владимира Сорокина «Норма», поставленный Максимом Диденко. В интервью Forbes Life режиссер рассказал о том, почему писатель отказался смотреть постановку до премьеры, чем эволюция
-                            %span.quote_date 9 декабря 2019, m24.ru
-                            %a.quote_link(href="#") читать полностью
-
-                    .event_share
-                        .share
-                            .share_title поделиться
-                            .addthis_sharing_toolbox
-
-                    .partners
-                        .partners_list
-                            %span.partners_list-title партнеры спектакля
-                            %a.partners_item(href="#" target="__blank")
-                                %img.partners_image(src="src/img/partners/lg.svg" alt="")
-                            %a.partners_item(href="#" target="__blank")
-                                %img.partners_image(src="src/img/partners/simple-waters.svg" alt="")
-                            %a.partners_item(href="#" target="__blank")
-                                %img.partners_image(src="src/img/partners/mihoels.svg" alt="")
-                        .partners_list
-                            %span.partners_list-title информационные партнеры спектакля
-                            %a.partners_item(href="#" target="__blank")
-                                %img.partners_image(src="src/img/partners/pioner.svg" alt="")
-                            %a.partners_item(href="#" target="__blank")
-                                %img.partners_image(src="src/img/partners/tass.svg" alt="")
-                            %a.partners_item(href="#" target="__blank")
-                                %img.partners_image(src="src/img/partners/kommersatnt.svg" alt="")
-
-                    
-
-                    %button.event_fixed-button купить билет
-
-            .events
-                %span.events_title наши премьеры
-                .events_list
-                    %a.events_item
-                        .events_item-image-wrapper
-                            %img.events_item-image(src="src/img/temp/event-small-1.jpg" alt="")
-                        %span.events_item-title Ревизор
-                    %a.events_item
-                        .events_item-image-wrapper
-                            %img.events_item-image(src="src/img/temp/event-small-2.jpg" alt="")
-                        %span.events_item-title Подлинная история Фрекен Бок
-                    %a.events_item
-                        .events_item-image-wrapper
-                            %img.events_item-image(src="src/img/temp/event-small-3.svg" alt="")
-                        %span.events_item-title Макбет
-                    %a.events_item
-                        .events_item-image-wrapper
-                            %img.events_item-image(src="src/img/temp/event-small-4.jpg" alt="")
-                        %span.events_item-title Княжна Марья
 
         %footer.footer
             .social
