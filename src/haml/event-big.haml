@@ -43,14 +43,28 @@
             %span.content_title событие
 
             %article.article
-                %h1 Поздравление с юбилеем Леонида Зорина
-                .article_columns
-                    %img.article_image(src="/src/img/temp/event-image.jpg" alt="")
+                %h1 Открытие фестиваля
+                .article_slider-wrapper
+                    .slider
+                        .slider_counter
+                        .slider_track
+                            .slider_item
+                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
+                            .slider_item
+                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
+                            .slider_item
+                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
+                            .slider_item
+                                %img.slider_image(src="src/img/temp/event-1.jpg" alt="")
+                .article_columns.article_columns__indent
                     .article_content
                         %span.article_date 1 февраля 2020
                         %p Театр на Малой Бронной поздравляет с юбилеем писателя, публициста и драматурга Леонида Зорина!
                         %p Желаем Леониду Генриховичу крепкого здоровья, радости и неугасаемой творческой энергии!
                         %p Леонид Генрихович автор более 50-ти пьес, поставленных и опубликованных на родине и за рубежом, среди них "Варшавская мелодия" (1966 года).Трогательная история любви в послевоенной Москве восхищает не первое поколение зрителей.
+                        %p Спектакль уже десять лет идёт на сцене Театра на Малой Бронной. На этой же сцене в этом сезоне обретёт новое дыхание одна из самых известных пьес драматурга "Покровские ворота".
+
+                        %iframe( width="560" height="315" src="https://www.youtube.com/embed/wiCDIldnnnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen)
                         %p Спектакль уже десять лет идёт на сцене Театра на Малой Бронной. На этой же сцене в этом сезоне обретёт новое дыхание одна из самых известных пьес драматурга "Покровские ворота".
 
                 .widget.carousel

@@ -12,19 +12,17 @@
     @include tablet {
         white-space: nowrap;
         font-size: 12rem;
-        line-height: 24rem;
-        padding-top: 6rem;
-        padding-bottom: 7rem;
+        line-height: 18rem;
+        padding-top: 8rem;
+        padding-bottom: 9rem;
     }
     @include desktop {
         font-size: 16rem;
-        line-height: 24rem;
-        padding-top: 16rem;
-        padding-bottom: 20rem;
+        padding-top: 18rem;
+        padding-bottom: 22rem;
     }
     @include desktop-large {
         font-size: 20rem;
-        line-height: 24rem;
         padding-top: 25rem;
         padding-bottom: 35rem;
     }
