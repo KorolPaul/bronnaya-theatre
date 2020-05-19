@@ -94,13 +94,15 @@
             left: 0;
             width: 100%;
             bottom: 0;
-            border-bottom: 1px solid currentColor;
+            border-bottom: 1rem solid currentColor;
             transform: scaleX(0);
             transform-origin: left 0;
             transition: 0.2s ease-in-out transform;
         }
         .filters_control:hover &::before,
-        .filters_control.active &::before {
+        .filters_switcher-button:hover &::before,
+        .filters_control.active &::before,
+        .filters_switcher-button.active &::before {
             transform: scaleX(1);
         }
     }
@@ -116,5 +118,27 @@
         @include desktop-large {
             margin-right: 26rem;
         }
+    }
+    &_switcher-button {
+        padding: 0;
+        background: transparent;
+        border: none;
+        color: $color;
+        font-size: 12rem;
+        line-height: 17rem;
+        margin: 0 20rem;
+
+        &:hover,
+        &:active {
+            color: $color;
+            background: transparent;
+        }
+    }
+    &_switcher-divider {
+        display: inline-block;
+        height: 15rem;
+        width: 1px;
+        background: $color;
+        vertical-align: middle;
     }
 }

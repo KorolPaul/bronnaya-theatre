@@ -40,64 +40,52 @@
                             %a.social_link.social_link__youtube(href="#")
 
         %main.content
-            %span.content_title события
+            %span.content_title клуб волонтеров
 
-            .filters.filters__fixed
-                .filters_controls
-                    %button.filters_control
-                        %img.filters_control-icon(src="src/img/calendar.svg" alt="")
-                        %span.filters_control-text фильтр по дате
-            
-            .events
-                %a.events_item(href="#")
-                    .events_item-image-wrapper
-                        %img.events_item-image(src="src/img/temp/news-1.jpg" alt="")
-                    .events_item-info
-                        %span.events_item-title ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
-                        %span.events_item-date 1 февраля 2020
-                %a.events_item(href="#")
-                    .events_item-image-wrapper
-                        %img.events_item-image(src="src/img/temp/news-2.jpg" alt="")
-                    .events_item-info
-                        %span.events_item-title Лица победы
-                        %span.events_item-date 2 февраля 2020
-                %a.events_item(href="#")
-                    .events_item-image-wrapper
-                        %img.events_item-image(src="src/img/temp/news-3.jpg" alt="")
-                    .events_item-info
-                        %span.events_item-title ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
-                        %span.events_item-date 3 февраля 2020
-                %a.events_item(href="#")
-                    .events_item-image-wrapper
-                        %img.events_item-image(src="src/img/temp/news-4.jpg" alt="")
-                    .events_item-info
-                        %span.events_item-title Лица победы
-                        %span.events_item-date 4 февраля 2020
-                %a.events_item(href="#")
-                    .events_item-image-wrapper
-                        %img.events_item-image(src="src/img/temp/news-5.jpg" alt="")
-                    .events_item-info
-                        %span.events_item-title ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
-                        %span.events_item-date 6 февраля 2020
-                %a.events_item(href="#")
-                    .events_item-image-wrapper
-                        %img.events_item-image(src="src/img/temp/news-6.jpg" alt="")
-                    .events_item-info
-                        %span.events_item-title Лица победы
-                        %span.events_item-date 7 февраля 2020
-                %a.events_item(href="#")
-                    .events_item-image-wrapper
-                        %img.events_item-image(src="src/img/temp/news-7.jpg" alt="")
-                    .events_item-info
-                        %span.events_item-title ПЕРЕЕЗД В ТКЗ «Дворец на Яузе»
-                        %span.events_item-date 21 февраля 2020
-                %a.events_item(href="#")
-                    .events_item-image-wrapper
-                        %img.events_item-image(src="src/img/temp/news-2.jpg" alt="")
-                    .events_item-info
-                        %span.events_item-title Лица победы
-                        %span.events_item-date 2 февраля 2020
-                
+            %article.article
+                %h1 Поздравление с юбилеем Леонида Зорина
+                .article_columns
+                    %img.article_image(src="/src/img/temp/event-image.jpg" alt="")
+                    .article_content
+                        %p Волонтерский клуб нашего Театра отражает институциональный континентально-европейский тип политической культуры. Субъект власти неоднозначен. Унитарное государство неизбежно. Конституционная демократия определяет социализм. Политический процесс в современной России, как правило, теоретически сохраняет феномен толпы.
+
+                %form.form
+                    %h2 Присоединиться
+                    .form_row
+                        .form_cell
+                            %input(type="text" placeholder="имя и фамилия")
+                    .form_row
+                        .form_cell
+                            %input(type="tel" placeholder="телефон")
+                    .form_row
+                        .form_cell
+                            %input(type="email" placeholder="почта")
+                        .form_cell
+                            %input(type="submit" value="отправить")
+
+                .article_document
+                    %h2 Устав
+                    .article_document-text
+                        %p Устав клуба отражает наши ценности и представляет собой прагматический гуманизм. Конфедерация важно сохраняет политический процесс в современной России.
+                        %a.article_document-link(href="#") скачать полный текст Устава
+
+                %h2 Контакты
+                %p Рецептивная эстетика, так как не наследует древние поднятия, анизотропно смещает палеокриогенный структурализм. 
+                %table.article_contacts
+                    %tbody
+                        %tr
+                            %td Директор клуба
+                            %td 
+                                %span Иван Николаев
+                                %a(href="tel:+7 (495) 000-00-00") +7 (495) 000-00-00
+                                %a(href="mailto:bronnaya@gmail.com") bronnaya@gmail.com
+                        %tr
+                            %td Управляющий по набору волонтеров
+                            %td 
+                                %span Иван Николаев
+                                %a(href="tel:+7 (495) 000-00-00") +7 (495) 000-00-00
+                                %a(href="mailto:bronnaya@gmail.com") bronnaya@gmail.com
+
 
         %footer.footer
             .footer_mobile

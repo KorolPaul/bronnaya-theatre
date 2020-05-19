@@ -1,4 +1,14 @@
 .footer {
+    @include tablet {
+        margin-left: 128rem;
+    }
+    @include desktop {
+        margin-left: 19vw;
+    }
+    @include desktop-large {
+        margin-left: 18vw;
+    }
+
     &_mobile {
         background: rgba(0, 0, 0, 0.03);
         padding: 16rem $layout_indent 24rem;
