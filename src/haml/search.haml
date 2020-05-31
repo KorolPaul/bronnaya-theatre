@@ -22,19 +22,38 @@
                 .menu-toggle
 
                 .menu_content
-                    %button.menu_search-icon
+                    %button.menu_search-icon(id="search-button")
                     %img.menu_logo(src="src/img/logo-mobile-menu.svg" alt="")
 
+                    .search
+                        .search_close(id="search-close")
+                        .search_fade
+                        .search_content
+                            %input.search_input(type="search" placeholder="поиск" required="true")
+                            .search_results
+                                %a.search_result(href="spectacle.html") макбет
+                                %a.search_result(href="spectacle.html") леди макбет
+                                %a.search_result(href="spectacle.html") макбет трагедия
+                    
 
-                    %a.menu_link.menu_link__mobile(href="/") купить билет
-                    %a.menu_link.menu_link__mobile(href="/") адреса
-                    %a.menu_link.active(href="/afisha.html") афиша
-                    %a.menu_link(href="/about.html") о театре
-                    %a.menu_link(href="/events.html") события
-                    %a.menu_link(href="/press.html") пресса о театре
-                    %a.menu_link(href="/volunteers.html") клуб волонтеров
-                    %a.menu_link(href="/partners.html") партнеры театра
-                    %a.menu_link.menu_link__indent(href="/search.html") поиск
+                    %a.menu_link.menu_link__mobile(href="/")
+                        %span.menu_link-text купить билет
+                    %a.menu_link.menu_link__mobile(href="/")
+                        %span.menu_link-text адреса
+                    %a.menu_link.active(href="/afisha.html")
+                        %span.menu_link-text афиша
+                    %a.menu_link(href="/about.html")
+                        %span.menu_link-text о театре
+                    %a.menu_link(href="/events.html")
+                        %span.menu_link-text события
+                    %a.menu_link(href="/press.html")
+                        %span.menu_link-text пресса о театре
+                    %a.menu_link(href="/volunteers.html")
+                        %span.menu_link-text клуб волонтеров
+                    %a.menu_link(href="/partners.html")
+                        %span.menu_link-text партнеры театра
+                    %a.menu_link.menu_link__indent.menu_link__search
+                        %span.menu_link-text поиск
 
                     .menu_social
                         .social.social__header

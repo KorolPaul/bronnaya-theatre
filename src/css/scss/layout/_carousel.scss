@@ -3,14 +3,17 @@
         display: block;
         //background: rgba(#040304, .35);
 
+        &:hover {
+            color: $color;
+        }
         &::after {
             display: none;
         }
     }
     &_item-image-wrapper {
         overflow: hidden;
-        height: 124rem;
-        width: 124rem;
+        height: 95rem;
+        width: 95rem;
         margin: 0 0 20rem;
         @include tablet {
             height: 64rem;
@@ -53,8 +56,8 @@
         transform-origin: center center;
         transition: 0.2s ease-in-out transform;
 
-        &:hover {
-            transform: scale(1.15);
+        .carousel_item:hover & {
+            transform: scale(1.1);
         }
     }
     &_item-title {
@@ -63,17 +66,21 @@
         line-height: 18rem;
         display: block;
         position: relative;
+        max-height: 50rem;
         @include tablet {
             font-size: 11rem;
             line-height: 14rem;
+            max-height: 42rem;
         }
         @include desktop {
             font-size: 14rem;
             line-height: 18rem;
+            max-height: 54rem;
         }
         @include desktop-large {
             font-size: 18rem;
             line-height: 26rem;
+            max-height: 78rem;
         }
 
         &__decorated {

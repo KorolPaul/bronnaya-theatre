@@ -25,16 +25,35 @@
                     %button.menu_search-icon
                     %img.menu_logo(src="src/img/logo-mobile-menu.svg" alt="")
 
+                    .search
+                        .search_close(id="search-close")
+                        .search_fade
+                        .search_content
+                            %input.search_input(type="search" placeholder="поиск" required="true")
+                            .search_results
+                                %a.search_result(href="spectacle.html") макбет
+                                %a.search_result(href="spectacle.html") леди макбет
+                                %a.search_result(href="spectacle.html") макбет трагедия
 
-                    %a.menu_link.menu_link__mobile(href="/") купить билет
-                    %a.menu_link.menu_link__mobile(href="/") адреса
-                    %a.menu_link.active(href="/afisha.html") афиша
-                    %a.menu_link(href="/about.html") о театре
-                    %a.menu_link(href="/events.html") события
-                    %a.menu_link(href="/press.html") пресса о театре
-                    %a.menu_link(href="/volunteers.html") клуб волонтеров
-                    %a.menu_link(href="/partners.html") партнеры театра
-                    %a.menu_link.menu_link__indent(href="/search.html") поиск
+
+                    %a.menu_link.menu_link__mobile(href="/")
+                        %span.menu_link-text купить билет
+                    %a.menu_link.menu_link__mobile(href="/")
+                        %span.menu_link-text адреса
+                    %a.menu_link.active(href="/afisha.html")
+                        %span.menu_link-text афиша
+                    %a.menu_link(href="/about.html")
+                        %span.menu_link-text о театре
+                    %a.menu_link(href="/events.html")
+                        %span.menu_link-text события
+                    %a.menu_link(href="/press.html")
+                        %span.menu_link-text пресса о театре
+                    %a.menu_link(href="/volunteers.html")
+                        %span.menu_link-text клуб волонтеров
+                    %a.menu_link(href="/partners.html")
+                        %span.menu_link-text партнеры театра
+                    %a.menu_link.menu_link__indent(href="/search.html")
+                        %span.menu_link-text поиск
 
                     .menu_social
                         .social.social__header
@@ -95,7 +114,7 @@
                                 %span.spectacle_creators-line Автор: Леонид Зорин
                                 %span.spectacle_creators-line Режиссёр: Сергей Голомазов
                                 %span.spectacle_creators-line В ролях: Юлия Пересильд, Даниил Страхов
-                            .spectacle_info-rating 16+
+                                .spectacle_info-rating 16+
                     .spectacle_controls
                         .spectacle_controls-column
                             %button.spectacle_button купить билет
@@ -446,6 +465,28 @@
                     %img.footer_bottom-image(src="src/img/active-citizen.jpg" alt="")
                     %img.footer_bottom-image(src="src/img/year-of-theatre.jpg" alt="")
                     %a.footer_outer-link(href="#") mos.ru
+
+        .fade
+            .popup 
+                %button.popup_close
+                .popup_content
+                    %p.popup_title ТКЗ «Дворец на Яузе»
+                    .place
+                        .place_adress
+                            .place_metro Электрозаводская Площадь Журавлева, 1
+                            %button.place_scheme-button посмотреть схему&nbsp;зала
+                        .place_map-holder
+                            %div(style="position:relative;overflow:hidden;")
+                                %a(href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;") Москва
+                                %a(href="https://yandex.by/maps/213/moscow/house/ploshchad_zhuravlyova_10/Z04YcQdkTEYPQFtvfXt5cn5rYg==/?ll=37.704749%2C55.783214&utm_medium=mapframe&utm_source=maps&z=18.2" style="color:#eee;font-size:12px;position:absolute;top:14px;") Площадь Журавлёва, 10 — Яндекс.Карты
+                                %iframe(src="https://yandex.by/map-widget/v1/-/C8sMQWlE" width="560" height="400" frameborder="0" allowfullscreen="true" style="position:relative;")
+                            .place_map-buttons
+                                %button.place_map-button открыть в Google Maps
+                                    .place_map-button-border
+                                %button.place_map-button открыть в Яндекс.Картах
+                                    .place_map-button-border
+                    
+                    %a.popup_print-link(href="#") версия для печати
 
         
         %script(src="src/js/tiny-slider.min.js")

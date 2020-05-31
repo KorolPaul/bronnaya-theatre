@@ -81,6 +81,10 @@
             }
         }
 
+        &:hover {
+            color: $color;
+        }
+
         .menu-opened & {
             display: block;
             border: 1px solid transparent;
@@ -100,6 +104,17 @@
                 border-color: $light_color;
                 color: $color;
             } 
+        }
+    }
+    &_link-text {
+        @include tablet {
+            transition: .2s ease-in-out border;
+            border-bottom: 1px solid transparent;
+        }
+
+        .menu_link:hover & {
+            border-bottom-color: currentColor;
+            color: $color;
         }
     }
     &_social {
@@ -142,9 +157,12 @@
         top: 20rem;
         left: 50%;
         transform: translateX(-50%);
-
         display: none;
+        transition: .2s ease-in-out opacity;
 
+        .search-opened & {
+            opacity: 0;
+        }
         .menu-opened & {
             display: block;
             @include tablet {
