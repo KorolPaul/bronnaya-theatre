@@ -636,6 +636,7 @@
             margin: 0;
             @include tablet {
                 max-width: none;
+                display: block;
             }
         }
     }
@@ -690,10 +691,7 @@
         }
         .spectacle__line & {
             top: auto;
-            bottom: 10rem;
-            @include tablet {
-                bottom: 0;
-            }
+            bottom: 0;
         }
     }
     &_controls {
@@ -880,6 +878,7 @@
         }
 
         .spectacle__line & {
+            padding-right: 10rem;
             @include tablet {
                 display: contents;
             }
