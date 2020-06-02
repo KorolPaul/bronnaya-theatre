@@ -387,16 +387,41 @@
         }
     }
     &_title-text {
-        border-bottom: 2rem solid transparent;
+        border-bottom: 3rem solid transparent;
         transition: 0.2s ease-in-out border-color;
+        @include tablet {
+            border-bottom-width: 2rem;
+        }
 
         .spectacle_header:hover &,
-        .spectacle_header:active & {
+        .spectacle_header:active &,
+        .spectacle_title:hover &,
+        .spectacle_title:active & {
             border-bottom-color: currentColor;
         }
 
         &::after {
             content: none;
+        }
+
+        .spectacle_title__small & {
+            @include tablet {
+                border-bottom-width: 1rem;
+            }
+            @include desktop {
+                border-bottom-width: 2rem;
+            }
+        }
+        .spectacle_title__big & {
+            @include desktop {
+                border-bottom-width: 3rem;
+            }
+        }
+        .spectacle__big & {
+            border-bottom-width: 3rem;
+            @include desktop-large {
+                border-bottom-width: 4rem;
+            }
         }
     }
     &_description {

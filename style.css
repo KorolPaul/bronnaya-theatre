@@ -4079,18 +4079,54 @@ h3,
 }
 
 .spectacle_title-text {
-  border-bottom: 2rem solid transparent;
+  border-bottom: 3rem solid transparent;
   -webkit-transition: 0.2s ease-in-out border-color;
   transition: 0.2s ease-in-out border-color;
 }
 
+@media all and (min-width: 767px) {
+  .spectacle_title-text {
+    border-bottom-width: 2rem;
+  }
+}
+
 .spectacle_header:hover .spectacle_title-text,
-.spectacle_header:active .spectacle_title-text {
+.spectacle_header:active .spectacle_title-text,
+.spectacle_title:hover .spectacle_title-text,
+.spectacle_title:active .spectacle_title-text {
   border-bottom-color: currentColor;
 }
 
 .spectacle_title-text::after {
   content: none;
+}
+
+@media all and (min-width: 767px) {
+  .spectacle_title__small .spectacle_title-text {
+    border-bottom-width: 1rem;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .spectacle_title__small .spectacle_title-text {
+    border-bottom-width: 2rem;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .spectacle_title__big .spectacle_title-text {
+    border-bottom-width: 3rem;
+  }
+}
+
+.spectacle__big .spectacle_title-text {
+  border-bottom-width: 3rem;
+}
+
+@media all and (min-width: 1799px) {
+  .spectacle__big .spectacle_title-text {
+    border-bottom-width: 4rem;
+  }
 }
 
 .spectacle_description {
@@ -7466,7 +7502,19 @@ h3,
 
 @media all and (min-width: 767px) {
   .accordion__secondary .accordion_header-title {
-    border-bottom-width: 2rem;
+    border-bottom-width: 3rem;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .accordion__secondary .accordion_header-title {
+    border-bottom-width: 4rem;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .accordion__secondary .accordion_header-title {
+    border-bottom-width: 5rem;
   }
 }
 
