@@ -39,13 +39,17 @@
             border: none;
         }
         @include desktop {
-            padding-right: 54rem;
+            padding-right: 34rem;
             padding-left: 15vw;
             padding-top: 26rem;
+        }
+        @include media(1366px) {
+            padding-left: 16vw;
         }
         @include desktop-large {
             padding-left: 15vw;
             padding-top: 40rem;
+            padding-right: 48rem;
         }
     }
 
@@ -96,9 +100,12 @@
             }
             @include desktop {
                 height: 26rem;
+                top: 1rem;
             }
             @include desktop-large {
                 height: 32rem;
+                width: 3;
+                top: 0;
             }
         }
 
@@ -106,6 +113,13 @@
             top: -54rem;
             @include tablet {
                 top: 0;
+                margin-left: 20rem;
+            }
+            @include desktop {
+                margin-left: 34rem;
+            }
+            @include desktop-large {
+                margin-left: 48rem;
             }
         }
     }
