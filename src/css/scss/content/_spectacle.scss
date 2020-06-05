@@ -239,7 +239,7 @@
             width: 2rem;
             position: absolute;
             left: 0;
-            top: 1rem;
+            top: -1rem;
             transform: rotate(35deg);
             @include tablet {
                 top: 2rem;
