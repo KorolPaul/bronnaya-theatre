@@ -1,12 +1,12 @@
 .footer {
     @include tablet {
-        margin-left: 128rem;
+        margin-left: 110rem;
     }
     @include desktop {
-        margin-left: 19vw;
+        margin-left: 16vw;
     }
     @include desktop-large {
-        margin-left: 18vw;
+        margin-left: 15vw;
     }
 
     &_mobile {
@@ -139,7 +139,7 @@
         @include desktop {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: stretch;
         }
     }
     &_adress {
@@ -166,6 +166,7 @@
         border: 1px solid currentColor;
         @include desktop {
             font-size: 11rem;
+            line-height: 27rem;
         }
 
         &:hover {
@@ -183,6 +184,9 @@
     &_description {
         @include tablet {
             margin: 0 0 28rem;
+        }
+        @include desktop {
+            margin: 0;
         }
     }
     &_documents {

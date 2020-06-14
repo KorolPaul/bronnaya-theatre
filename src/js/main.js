@@ -44,7 +44,7 @@ document.addEventListener("scroll", function(e) {
 });
 
 /* Title size calculation */
-const spectacleTitles = document.querySelectorAll('.spectacle_title');
+const spectacleTitles = document.querySelectorAll('.spectacle_header .spectacle_title');
 if (spectacleTitles) {
     for (let i = 0; i < spectacleTitles.length; i++) {
         const title = spectacleTitles[i];
@@ -69,7 +69,7 @@ if (carousels.length) {
             gutter: 30,
             nav: false,
             mouseDrag: true,
-            loop: true,
+            loop: false,
             controlsContainer: carouselControls,
             preventScrollOnTouch: true,
             responsive: {
@@ -79,14 +79,11 @@ if (carousels.length) {
                 },
                 1024: {
                     items: 8,
-                    gutter: 38,
                 },
                 1260: {
-                    gutter: 54,
                     items: 6.8,
                 },
                 1920: {
-                    gutter: 74,
                     items: 8,
                 },
             }

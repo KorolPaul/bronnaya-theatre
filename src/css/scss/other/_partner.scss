@@ -35,7 +35,6 @@
         display: flex;
         position: relative;
         margin: 40rem -16rem 80rem;
-        padding-right: 50rem;
         left: auto;
         font-size: 12rem;
         line-height: 18rem;
@@ -66,6 +65,9 @@
     &_gallery {
         margin: 0 0 0 16rem;
         @include tablet {
+            width: 130rem;
+        }
+        @include desktop {
             width: 140rem;
         }
     }
