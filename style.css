@@ -5923,7 +5923,7 @@ h3,
 
 .slider_counter {
   right: 26rem;
-  top: 100%;
+  top: 101.5%;
   font-size: 10rem;
   line-height: 20rem;
   color: #9b9b9b;
@@ -5935,6 +5935,7 @@ h3,
   .slider_counter {
     right: auto;
     left: 16rem;
+    top: 100%;
     text-align: right;
     width: calc(100vw - 250rem - 128rem - 16rem);
   }
@@ -5953,7 +5954,7 @@ h3,
   .slider_counter {
     font-size: 18rem;
     line-height: 20rem;
-    width: calc(100vw - 618rem - 18vw - 32rem);
+    width: calc(100vw - 618rem - 18vw - 46rem);
   }
 }
 
@@ -8313,6 +8314,7 @@ h3,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  min-height: 27rem;
 }
 
 .filters_controls__only-child {
@@ -9164,7 +9166,7 @@ h3,
 .article h1 {
   font-size: 28rem;
   line-height: 33rem;
-  margin: 0 0 34rem;
+  margin: 0 0 22rem;
 }
 
 @media all and (min-width: 767px) {
