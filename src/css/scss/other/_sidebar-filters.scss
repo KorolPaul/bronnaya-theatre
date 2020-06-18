@@ -2,6 +2,7 @@
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     @include tablet {
         min-width: 390rem;
     }

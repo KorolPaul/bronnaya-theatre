@@ -57,17 +57,18 @@
         }
     }
     &_scheme-button {
+        @include button;
         @include blue-button;
         font-size: 12rem;
         line-height: 16rem;
-        padding: 13rem 20rem 17rem;
+        padding: 15rem 20rem 17rem;
         margin: 0 0 0 20rem;
         @include tablet {
             box-sizing: border-box;
             font-size: 11rem;
             line-height: 16rem;
-            height: 35rem;
-            padding: 0 12rem;
+            height: 38rem;
+            padding: 10rem 12rem 0;
             margin-bottom: 13rem;
             margin-left: 30rem;
             //min-width: 151rem;
@@ -75,7 +76,7 @@
         @include desktop {
             font-size: 16rem;
             line-height: 16rem;
-            padding: 0 33rem;
+            padding: 20rem 33rem 0;
             margin-bottom: 21rem;
             margin-left: 58rem;
             min-height: 60rem;
@@ -88,6 +89,7 @@
             height: 70rem;
             margin-left: 74rem;
             min-height: 84rem;
+            padding-top: 25rem;
         }
     }
     &_map-holder {
@@ -153,25 +155,31 @@
         max-width: 47%;
         position: relative;
         border-color: transparent;
-        min-height: 62rem;
-        padding: 0 10rem;
+        padding: 13rem 10rem 13rem;
+        white-space: normal;
+        text-align: center;
         @include tablet {
-            padding: 0 8rem;
+            padding: 10rem 8rem 12rem;
             max-width: none;
             margin: 0 8rem;
             min-height: 37rem;
-            line-height: 16rem;
             box-sizing: border-box;
             flex-grow: 1;
             //min-width: 151rem;
         }
         @include desktop {
-            min-height: 62rem;
-            //@extend: 254rem;
+            padding-top: 20rem;
+            padding-bottom: 22rem;
         }
         @include desktop-large {
             margin: 0 20rem;
-            min-height: 86rem;
+            padding-top: 32rem;
+            padding-bottom: 34rem;
+
+        }
+
+        &::after {
+            content: none;
         }
     }
     &_map-button-border {
@@ -183,6 +191,12 @@
         bottom: 0;
         border: 1px solid $color;
         transition: .2s ease-in-out all;
+        @include desktop {
+            top: -1rem;
+            left: -1rem;
+            right: -1rem;
+            bottom: -1rem;
+        }
 
         .place_map-button:hover & {
             top: -3px;

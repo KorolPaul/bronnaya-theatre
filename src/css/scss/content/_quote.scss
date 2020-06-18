@@ -50,6 +50,7 @@
         line-height: 28rem;
         margin: 0 0 4rem;
         text-align: left;
+        word-break: break-word;
         @include tablet {
             font-size: 14rem;
             line-height: 22rem;

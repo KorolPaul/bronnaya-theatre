@@ -40,6 +40,7 @@
         line-height: 18rem;
         background-size: 57rem 49rem;
         text-align: left;
+        overflow: hidden;
         @include tablet {
             display: none;
         }

@@ -5341,6 +5341,7 @@ h3,
   line-height: 28rem;
   margin: 0 0 4rem;
   text-align: left;
+  word-break: break-word;
 }
 
 @media all and (min-width: 767px) {
@@ -6443,32 +6444,32 @@ h3,
 .people_item-image-wrapper {
   overflow: hidden;
   border-radius: 50%;
-}
-
-.people_item-image {
-  width: 100%;
-  border-radius: 50%;
   margin: 0 0 4rem;
-  -webkit-transition: .2s ease-in-out transform;
-  transition: .2s ease-in-out transform;
 }
 
 @media all and (min-width: 767px) {
-  .people_item-image {
+  .people_item-image-wrapper {
     margin-bottom: 8rem;
   }
 }
 
 @media all and (min-width: 1259px) {
-  .people_item-image {
+  .people_item-image-wrapper {
     margin-bottom: 12rem;
   }
 }
 
 @media all and (min-width: 1799px) {
-  .people_item-image {
+  .people_item-image-wrapper {
     margin-bottom: 16rem;
   }
+}
+
+.people_item-image {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-transition: .2s ease-in-out transform;
+  transition: .2s ease-in-out transform;
 }
 
 .people_item:hover .people_item-image {
@@ -7760,6 +7761,11 @@ h3,
 
 .events-grid_item:last-child::after {
   content: none;
+}
+
+.events-grid_item:hover::after .events-grid_item:active::after {
+  -webkit-transform: none;
+  transform: none;
 }
 
 .events-grid__alternate .events-grid_item {
@@ -9391,6 +9397,10 @@ h3,
   transform: scaleX(1);
 }
 
+.documents td[rowspan] {
+  display: block;
+}
+
 .documents_section > a,
 .documents p > a {
   text-decoration: underline;
@@ -9468,6 +9478,7 @@ h3,
   line-height: 18rem;
   background-size: 57rem 49rem;
   text-align: left;
+  overflow: hidden;
 }
 
 @media all and (min-width: 767px) {
@@ -9659,6 +9670,19 @@ h3,
 }
 
 .place_scheme-button {
+  background: #FF0066;
+  border: 1rem solid #FF0066;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14rem;
+  line-height: 18rem;
+  padding: 12rem 20rem;
+  text-align: center;
+  -webkit-transition: 0.2s ease-in-out background-color, 0.2s ease-in-out color, 0.2s ease-in-out box-shadow;
+  transition: 0.2s ease-in-out background-color, 0.2s ease-in-out color, 0.2s ease-in-out box-shadow;
   color: #040304;
   background: #68D2DB;
   border: none;
@@ -9666,8 +9690,58 @@ h3,
   transition: .2s ease-in-out box-shadow;
   font-size: 12rem;
   line-height: 16rem;
-  padding: 13rem 20rem 17rem;
+  padding: 15rem 20rem 17rem;
   margin: 0 0 0 20rem;
+}
+
+@media all and (min-width: 767px) {
+  .place_scheme-button {
+    white-space: nowrap;
+    font-size: 12rem;
+    line-height: 18rem;
+    padding-top: 8rem;
+    padding-bottom: 9rem;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .place_scheme-button {
+    font-size: 16rem;
+    padding-top: 18rem;
+    padding-bottom: 22rem;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .place_scheme-button {
+    font-size: 20rem;
+    padding-top: 29rem;
+    padding-bottom: 31rem;
+  }
+}
+
+.place_scheme-button:hover {
+  background-color: #FF0066;
+  -webkit-box-shadow: 0 0 0 3rem #FF0066;
+  box-shadow: 0 0 0 3rem #FF0066;
+  outline: none;
+}
+
+.place_scheme-button:active {
+  background-color: #FF0066;
+  outline: none;
+}
+
+.place_scheme-button:focus {
+  outline: none;
+}
+
+.place_scheme-button:disabled, .place_scheme-button:disabled:hover, .place_scheme-button:disabled:active {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.2;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: default;
 }
 
 .place_scheme-button:hover {
@@ -9689,8 +9763,8 @@ h3,
     box-sizing: border-box;
     font-size: 11rem;
     line-height: 16rem;
-    height: 35rem;
-    padding: 0 12rem;
+    height: 38rem;
+    padding: 10rem 12rem 0;
     margin-bottom: 13rem;
     margin-left: 30rem;
   }
@@ -9700,7 +9774,7 @@ h3,
   .place_scheme-button {
     font-size: 16rem;
     line-height: 16rem;
-    padding: 0 33rem;
+    padding: 20rem 33rem 0;
     margin-bottom: 21rem;
     margin-left: 58rem;
     min-height: 60rem;
@@ -9715,6 +9789,7 @@ h3,
     height: 70rem;
     margin-left: 74rem;
     min-height: 84rem;
+    padding-top: 25rem;
   }
 }
 
@@ -9821,8 +9896,9 @@ h3,
   max-width: 47%;
   position: relative;
   border-color: transparent;
-  min-height: 62rem;
-  padding: 0 10rem;
+  padding: 13rem 10rem 13rem;
+  white-space: normal;
+  text-align: center;
 }
 
 @media all and (min-width: 767px) {
@@ -9857,11 +9933,10 @@ h3,
 
 @media all and (min-width: 767px) {
   .place_map-button {
-    padding: 0 8rem;
+    padding: 10rem 8rem 12rem;
     max-width: none;
     margin: 0 8rem;
     min-height: 37rem;
-    line-height: 16rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-flex: 1;
@@ -9872,15 +9947,21 @@ h3,
 
 @media all and (min-width: 1259px) {
   .place_map-button {
-    min-height: 62rem;
+    padding-top: 20rem;
+    padding-bottom: 22rem;
   }
 }
 
 @media all and (min-width: 1799px) {
   .place_map-button {
     margin: 0 20rem;
-    min-height: 86rem;
+    padding-top: 32rem;
+    padding-bottom: 34rem;
   }
+}
+
+.place_map-button::after {
+  content: none;
 }
 
 .place_map-button-border {
@@ -9893,6 +9974,15 @@ h3,
   border: 1px solid #040304;
   -webkit-transition: .2s ease-in-out all;
   transition: .2s ease-in-out all;
+}
+
+@media all and (min-width: 1259px) {
+  .place_map-button-border {
+    top: -1rem;
+    left: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+  }
 }
 
 .place_map-button:hover .place_map-button-border {
@@ -10665,6 +10755,7 @@ h3,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  width: 100%;
 }
 
 @media all and (min-width: 767px) {
@@ -11464,6 +11555,7 @@ input[type="checkbox"]:checked + .sidebar-filters_label {
   -webkit-filter: blur(0);
   filter: blur(0);
   width: 290rem;
+  margin: auto;
   -webkit-transition: -webkit-filter 0.3s;
   transition: -webkit-filter 0.3s;
   transition: filter 0.3s;

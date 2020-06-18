@@ -140,12 +140,7 @@
     &_item-image-wrapper {
         overflow: hidden;
         border-radius: 50%;
-    }
-    &_item-image {
-        width: 100%;
-        border-radius: 50%;
         margin: 0 0 4rem;
-        transition: .2s ease-in-out transform;
         @include tablet {
             margin-bottom: 8rem;
         }
@@ -155,7 +150,11 @@
         @include desktop-large {
             margin-bottom: 16rem;
         }
-
+    }
+    &_item-image {
+        width: 100%;
+        border-radius: 50%;
+        transition: .2s ease-in-out transform;
 
         .people_item:hover & {
             transform: scale(1.08);

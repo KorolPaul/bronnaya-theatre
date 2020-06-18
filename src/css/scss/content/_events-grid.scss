@@ -62,6 +62,10 @@
         &:last-child::after {
             content: none;
         }
+        &:hover::after
+        &:active::after {
+            transform: none;
+        }
 
         .events-grid__alternate & {
             flex-direction: column;
