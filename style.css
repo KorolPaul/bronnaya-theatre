@@ -2784,6 +2784,7 @@ h3,
 
 .carousel_item-image-wrapper__rounded .carousel_item-image {
   height: auto;
+  border-radius: 50%;
 }
 
 .carousel_item-title {
