@@ -1422,13 +1422,13 @@ h3,
   }
 }
 
-.wide-page .header {
+.accordion-page .header {
   background-color: #68D2DB;
   padding-bottom: 30rem;
 }
 
 @media all and (min-width: 767px) {
-  .wide-page .header {
+  .accordion-page .header {
     background-color: transparent;
     padding-bottom: 20rem;
   }
@@ -1844,12 +1844,18 @@ h3,
 .accordion-page .content {
   padding-left: 0;
   padding-right: 0;
+  border-top: 1px solid #040304;
+}
+
+@media all and (min-width: 767px) {
+  .accordion-page .content {
+    border: none;
+  }
 }
 
 .wide-page .content,
 .accordion-page .content {
   padding-top: 0;
-  border-top: 1px solid #040304;
 }
 
 @media all and (min-width: 767px) {
@@ -2380,6 +2386,12 @@ h3,
   }
 }
 
+@media all and (min-width: 1799px) {
+  .footer_column__flex {
+    width: 50%;
+  }
+}
+
 .footer_logo {
   height: 42rem;
   margin: 0 0 26rem 0;
@@ -2408,6 +2420,12 @@ h3,
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .footer_contacts {
+    width: 55%;
   }
 }
 
@@ -2801,6 +2819,7 @@ h3,
     font-size: 11rem;
     line-height: 14rem;
     max-height: 42rem;
+    width: 120%;
   }
 }
 
@@ -2839,9 +2858,16 @@ h3,
 }
 
 .carousel_item-subtitle {
+  color: #4A4A4A;
   font-size: 12rem;
   line-height: 16rem;
   font-weight: normal;
+}
+
+@media all and (min-width: 767px) {
+  .carousel_item-subtitle {
+    width: 120%;
+  }
 }
 
 @media all and (min-width: 1799px) {
@@ -3171,6 +3197,7 @@ h3,
   width: 20rem;
   -webkit-transition: 0.2s ease-in-out transform;
   transition: 0.2s ease-in-out transform;
+  z-index: 1;
 }
 
 @media all and (min-width: 767px) {
@@ -4274,6 +4301,12 @@ h3,
   color: #4A4A4A;
 }
 
+@media all and (min-width: 1799px) {
+  .spectacle_description {
+    font-size: 20rem;
+  }
+}
+
 .spectacle_adress, .spectacle_duration {
   color: #040304;
   display: inline-block;
@@ -4545,7 +4578,7 @@ h3,
   .spectacle_creators {
     font-size: 14rem;
     line-height: 20rem;
-    min-height: 60rem;
+    min-height: 80rem;
   }
 }
 
@@ -5321,7 +5354,7 @@ h3,
 
 @media all and (min-width: 1259px) {
   .quote::before {
-    top: 74rem;
+    top: 64rem;
     left: -16rem;
     width: 52rem;
     height: 36rem;
@@ -5330,7 +5363,7 @@ h3,
 
 @media all and (min-width: 1799px) {
   .quote::before {
-    top: 108rem;
+    top: 78rem;
     left: -22rem;
     width: 73rem;
     height: 51rem;
@@ -5338,8 +5371,8 @@ h3,
 }
 
 .quote_text {
-  font-size: 18rem;
-  line-height: 28rem;
+  font-size: 14rem;
+  line-height: 24rem;
   margin: 0 0 4rem;
   text-align: left;
   word-break: break-word;
@@ -5347,22 +5380,22 @@ h3,
 
 @media all and (min-width: 767px) {
   .quote_text {
-    font-size: 14rem;
+    font-size: 12rem;
     line-height: 22rem;
   }
 }
 
 @media all and (min-width: 1259px) {
   .quote_text {
-    font-size: 22rem;
-    line-height: 35rem;
+    font-size: 16rem;
+    line-height: 30rem;
   }
 }
 
 @media all and (min-width: 1799px) {
   .quote_text {
-    font-size: 34rem;
-    line-height: 56rem;
+    font-size: 22rem;
+    line-height: 42rem;
     margin-bottom: 14rem;
   }
 }
@@ -5382,7 +5415,7 @@ h3,
 
 .quote_date {
   color: #FF0066;
-  font-size: 14rem;
+  font-size: 12rem;
   line-height: 20rem;
   text-align: left;
   display: block;
@@ -5390,7 +5423,7 @@ h3,
 
 @media all and (min-width: 767px) {
   .quote_date {
-    font-size: 12rem;
+    font-size: 11rem;
     line-height: 20rem;
     display: inline;
     margin: 0 10rem 0 0;
@@ -5399,7 +5432,7 @@ h3,
 
 @media all and (min-width: 1259px) {
   .quote_date {
-    font-size: 18rem;
+    font-size: 14rem;
     line-height: 20rem;
     margin: 0 28rem 0 0;
   }
@@ -5407,7 +5440,7 @@ h3,
 
 @media all and (min-width: 1799px) {
   .quote_date {
-    font-size: 26rem;
+    font-size: 20rem;
     line-height: 48rem;
   }
 }
@@ -5426,27 +5459,27 @@ h3,
 }
 
 .quote_link {
-  font-size: 14rem;
+  font-size: 12rem;
   line-height: 46rem;
 }
 
 @media all and (min-width: 767px) {
   .quote_link {
-    font-size: 12rem;
+    font-size: 11rem;
     line-height: 20rem;
   }
 }
 
 @media all and (min-width: 1259px) {
   .quote_link {
-    font-size: 18rem;
+    font-size: 14rem;
     line-height: 20rem;
   }
 }
 
 @media all and (min-width: 1799px) {
   .quote_link {
-    font-size: 26rem;
+    font-size: 20rem;
     line-height: 48rem;
   }
 }
@@ -5845,6 +5878,20 @@ h3,
 @media all and (min-width: 767px) {
   .tickets_adress::before {
     top: 12rem;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .tickets_adress::before {
+    top: 10rem;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .tickets_adress::before {
+    width: 12rem;
+    height: 15rem;
+    top: 17rem;
   }
 }
 
@@ -6446,6 +6493,7 @@ h3,
   overflow: hidden;
   border-radius: 50%;
   margin: 0 0 4rem;
+  line-height: 0;
 }
 
 @media all and (min-width: 767px) {
@@ -6481,6 +6529,7 @@ h3,
 .people_item-title {
   font-weight: bold;
   border-bottom: 1px solid transparent;
+  width: 110%;
   -webkit-transition: .2s ease-in-out border;
   transition: .2s ease-in-out border;
 }
@@ -6488,6 +6537,7 @@ h3,
 .people_item-subtitle {
   color: #4a4a4a;
   display: block;
+  width: 110%;
 }
 
 @media all and (min-width: 1259px) {
@@ -8485,14 +8535,14 @@ h3,
 
 @media all and (min-width: 1259px) {
   .filters_control-icon {
-    margin-right: 14rem;
+    margin-right: 12rem;
     margin-top: -3rem;
   }
 }
 
 @media all and (min-width: 1799px) {
   .filters_control-icon {
-    margin-right: 18rem;
+    margin-right: 14rem;
     margin-top: -4rem;
     width: 18rem;
   }

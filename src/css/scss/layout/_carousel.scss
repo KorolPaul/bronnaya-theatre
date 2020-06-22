@@ -75,6 +75,7 @@
             font-size: 11rem;
             line-height: 14rem;
             max-height: 42rem;
+            width: 120%;
         }
         @include desktop {
             font-size: 14rem;
@@ -104,9 +105,13 @@
         }
     }
     &_item-subtitle {
+        color: #4A4A4A;
         font-size: 12rem;
         line-height: 16rem;
         font-weight: normal;
+        @include tablet {
+            width: 120%;
+        }
         @include desktop-large {
             font-size: 16rem;
             line-height: 22rem;

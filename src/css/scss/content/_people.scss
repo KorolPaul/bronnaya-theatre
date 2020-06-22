@@ -141,6 +141,7 @@
         overflow: hidden;
         border-radius: 50%;
         margin: 0 0 4rem;
+        line-height: 0;
         @include tablet {
             margin-bottom: 8rem;
         }
@@ -163,11 +164,13 @@
     &_item-title {
         font-weight: bold;
         border-bottom: 1px solid transparent;
+        width: 110%;
         transition: .2s ease-in-out border;
     }
     &_item-subtitle {
         color: #4a4a4a;
         display: block;
+        width: 110%;
 
         .people__big & {
             @include desktop {

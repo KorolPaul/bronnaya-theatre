@@ -123,6 +123,9 @@
                 align-items: flex-start;
                 width: auto;
             }
+            @include desktop-large {
+                width: 50%;
+            }
         }
     }
     &_logo {
@@ -140,6 +143,9 @@
             display: flex;
             justify-content: space-between;
             align-items: stretch;
+        }
+        @include desktop-large {
+            width: 55%;
         }
     }
     &_adress {

@@ -32,13 +32,13 @@
             height: 21rem;
         }
         @include desktop {
-            top: 74rem;
+            top: 64rem;
             left: -16rem;
             width: 52rem;
             height: 36rem;
         }
         @include desktop-large {
-            top: 108rem;
+            top: 78rem;
             left: -22rem;
             width: 73rem;
             height: 51rem;
@@ -46,22 +46,22 @@
     }
 
     &_text {
-        font-size: 18rem;
-        line-height: 28rem;
+        font-size: 14rem;
+        line-height: 24rem;
         margin: 0 0 4rem;
         text-align: left;
         word-break: break-word;
         @include tablet {
-            font-size: 14rem;
+            font-size: 12rem;
             line-height: 22rem;
         }
         @include desktop {
-            font-size: 22rem;
-            line-height: 35rem;
+            font-size: 16rem;
+            line-height: 30rem;
         }
         @include desktop-large {
-            font-size: 34rem;
-            line-height: 56rem;
+            font-size: 22rem;
+            line-height: 42rem;
             margin-bottom: 14rem;
         }
 
@@ -77,23 +77,23 @@
     }
     &_date {
         color: $bright_color;
-        font-size: 14rem;
+        font-size: 12rem;
         line-height: 20rem;
         text-align: left;
         display: block;
         @include tablet {
-            font-size: 12rem;
+            font-size: 11rem;
             line-height: 20rem;
             display: inline;
             margin: 0 10rem 0 0;
         }
         @include desktop {
-            font-size: 18rem;
+            font-size: 14rem;
             line-height: 20rem;
             margin: 0 28rem 0 0;
         }
         @include desktop-large {
-            font-size: 26rem;
+            font-size: 20rem;
             line-height: 48rem;
         }
 
@@ -108,18 +108,18 @@
         }
     }
     &_link {
-        font-size: 14rem;
+        font-size: 12rem;
         line-height: 46rem;
         @include tablet {
-            font-size: 12rem;
+            font-size: 11rem;
             line-height: 20rem;
         }
         @include desktop {
-            font-size: 18rem;
+            font-size: 14rem;
             line-height: 20rem;
         }
         @include desktop-large {
-            font-size: 26rem;
+            font-size: 20rem;
             line-height: 48rem;
         }
 

@@ -483,6 +483,11 @@
     &_role {
         color: #4A4A4A;
     }
+    &_description {
+        @include desktop-large {
+            font-size: 20rem;
+        }
+    }
     &_adress,
     &_duration {
         color: $color;
@@ -665,7 +670,7 @@
         @include desktop {
             font-size: 14rem;
             line-height: 20rem;
-            min-height: 60rem;
+            min-height: 80rem;
         }
         @include desktop-large {
             font-size: 20rem;

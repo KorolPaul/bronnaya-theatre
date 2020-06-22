@@ -255,6 +255,14 @@
             @include tablet {
                 top: 12rem
             }
+            @include desktop {
+                top: 10rem;
+            }
+            @include desktop-large {
+                width: 12rem;
+                height: 15rem;
+                top: 17rem;
+            }
         }
         &:hover::before {
             filter: none;
