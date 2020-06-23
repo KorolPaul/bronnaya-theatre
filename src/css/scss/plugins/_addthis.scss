@@ -34,6 +34,9 @@
         box-sizing: border-box;
         height: 100% !important;
         width: 100% !important;
+        @include tablet {
+            line-height: 0 !important;
+        }
 
         svg {
             height: 100% !important;

@@ -5,7 +5,7 @@
     @include tablet {
         position: fixed;
         padding: 21rem 14rem;
-        z-index: 1;
+        z-index: 4;
     }
     @include desktop {
         padding: 35rem 24rem;

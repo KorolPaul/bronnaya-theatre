@@ -57,6 +57,7 @@
         color: $bright_color;
         padding: 14rem 20rem 16rem;
         margin: 5rem 0 10rem;
+        transition: .2s ease-in-out all;
         @include tablet {
             margin-top: 7rem;
             height: 45rem;
@@ -66,11 +67,12 @@
             margin-top: 12rem;
             height: 76rem;
             min-width: 138rem;
+            line-height: 42rem;
         }
         @include desktop-large {
             margin-top: 16rem;
             height: 108rem;
-            line-height: 8rem;
+            line-height: 70rem;
             min-width: 190rem;
         }
 

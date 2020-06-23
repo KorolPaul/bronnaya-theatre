@@ -1275,9 +1275,9 @@ select:active {
   appearance: none;
   background: #fff;
   border: 1px solid #040304;
-  font-size: 12rem;
+  font-size: 10rem;
   line-height: 14rem;
-  padding: 9rem 10rem 5rem;
+  padding: 4rem 0 5rem 4rem;
   text-align: center;
   border-radius: 0;
   outline: none;
@@ -1287,6 +1287,8 @@ select:active {
   select,
   select:focus,
   select:active {
+    font-size: 12rem;
+    line-height: 14rem;
     padding: 9rem 20rem 11rem 20rem;
   }
 }
@@ -1406,7 +1408,7 @@ h3,
   .header {
     position: fixed;
     padding: 21rem 14rem;
-    z-index: 1;
+    z-index: 4;
   }
 }
 
@@ -3815,8 +3817,8 @@ h3,
 
 .spectacle__line .spectacle_image-wrapper {
   margin: 0 18rem 0 0;
-  width: 96rem;
-  height: 96rem;
+  width: 104rem;
+  height: 104rem;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
@@ -5596,6 +5598,8 @@ h3,
   color: #FF0066;
   padding: 14rem 20rem 16rem;
   margin: 5rem 0 10rem;
+  -webkit-transition: .2s ease-in-out all;
+  transition: .2s ease-in-out all;
 }
 
 @media all and (min-width: 767px) {
@@ -5611,6 +5615,7 @@ h3,
     margin-top: 12rem;
     height: 76rem;
     min-width: 138rem;
+    line-height: 42rem;
   }
 }
 
@@ -5618,7 +5623,7 @@ h3,
   .tickets_button {
     margin-top: 16rem;
     height: 108rem;
-    line-height: 8rem;
+    line-height: 70rem;
     min-width: 190rem;
   }
 }
@@ -6756,7 +6761,7 @@ h3,
 
 @media all and (min-width: 767px) {
   .event_subtitle {
-    margin: 0 0 35rem;
+    margin: 0;
   }
 }
 
@@ -6764,7 +6769,6 @@ h3,
   .event_subtitle {
     font-size: 22rem;
     line-height: 32rem;
-    margin: 0 0 42rem;
   }
 }
 
@@ -6772,7 +6776,6 @@ h3,
   .event_subtitle {
     font-size: 32rem;
     line-height: 56rem;
-    margin: 0 0 62rem;
   }
 }
 
@@ -7203,6 +7206,24 @@ h3,
 @media all and (min-width: 1799px) {
   .event_header, .event_content {
     padding-right: 538rem;
+  }
+}
+
+@media all and (min-width: 767px) {
+  .event_header {
+    margin: 0 0 35rem;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .event_header {
+    margin: 0 0 42rem;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .event_header {
+    margin: 0 0 62rem;
   }
 }
 
@@ -8655,6 +8676,12 @@ h3,
   transform: scaleX(1);
 }
 
+.filters_panel-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .filters_panel-divider {
   color: #040304;
   font-size: 16rem;
@@ -9947,7 +9974,7 @@ h3,
   max-width: 47%;
   position: relative;
   border-color: transparent;
-  padding: 13rem 10rem 13rem;
+  padding: 13rem 5rem 13rem;
   white-space: normal;
   text-align: center;
 }
@@ -11346,6 +11373,12 @@ input[type="checkbox"]:checked + .sidebar-filters_label {
   box-sizing: border-box;
   height: 100% !important;
   width: 100% !important;
+}
+
+@media all and (min-width: 767px) {
+  .at-share-btn .at-icon-wrapper {
+    line-height: 0 !important;
+  }
 }
 
 .at-share-btn .at-icon-wrapper svg {

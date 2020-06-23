@@ -123,17 +123,15 @@
         font-size: 14rem;
         line-height: 22rem;
         @include tablet {
-            margin: 0 0 35rem;
+            margin: 0;
         }
         @include desktop {
             font-size: 22rem;
             line-height: 32rem;
-            margin: 0 0 42rem;
         }
         @include desktop-large {
             font-size: 32rem;
             line-height: 56rem;
-            margin: 0 0 62rem;
         }
     }
     &_info {
@@ -439,6 +437,17 @@
         }
         @include desktop-large {
             padding-right: 538rem;
+        }
+    }
+    &_header {
+        @include tablet {
+            margin: 0 0 35rem;
+        }
+        @include desktop {
+            margin: 0 0 42rem;
+        }
+        @include desktop-large {
+            margin: 0 0 62rem;
         }
     }
     &_content {

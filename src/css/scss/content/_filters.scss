@@ -254,6 +254,9 @@
             transform: scaleX(1);
         }
     }
+    &_panel-column {
+        display: flex;
+    }
     &_panel-divider {
         color: $color;
         font-size: 16rem;
