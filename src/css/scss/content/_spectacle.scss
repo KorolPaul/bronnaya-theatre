@@ -290,7 +290,7 @@
             min-height: 110rem;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
         }
         @include desktop {
             min-height: 130rem;
@@ -352,13 +352,17 @@
         }
         &__big {
             @include tablet {
+                line-height: 1;
                 font-size: 31rem;
+                margin-bottom: 8rem;
             }
             @include desktop {
                 font-size: 50rem;
+                margin-bottom: 12rem;
             }
             @include desktop-large {
                 font-size: 72rem;
+                margin-bottom: 14rem;
             }
         }
 

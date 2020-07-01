@@ -360,6 +360,8 @@
             background-color: transparent;
             box-shadow: none;
         }
+
+        
     }
     &_info-more-arrow {
         position: absolute;
@@ -390,6 +392,10 @@
         }
         .event_info-more:active & {
             transform: scale(1) translateY(-30%);
+        }
+
+        .event_info-more.opened & {
+             transform: scale(1) translateY(-30%) rotate(180deg);
         }
     }
     &_main-info {

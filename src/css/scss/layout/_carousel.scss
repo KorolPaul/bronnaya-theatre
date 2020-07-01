@@ -75,20 +75,33 @@
             font-size: 11rem;
             line-height: 14rem;
             max-height: 42rem;
-            width: 120%;
+            width: 100%;
         }
         @include desktop {
             font-size: 14rem;
-            line-height: 18rem;
+            line-height: 16rem;
             max-height: 54rem;
         }
         @include desktop-large {
-            font-size: 18rem;
+            font-size: 20rem;
             line-height: 26rem;
             max-height: 78rem;
         }
 
         &__decorated {
+            @include tablet {
+                font-size: 10rem;
+                line-height: 13rem;
+            }
+            @include desktop {
+                font-size: 11rem;
+                line-height: 14rem;
+            }
+            @include desktop-large {
+                font-size: 16rem;
+                line-height: 20rem;
+            }
+            
             &::before {
                 content: "";
                 background-color: currentColor;
@@ -101,6 +114,11 @@
                 @include desktop {
                     width: 2rem;
                 }
+                @include desktop-large {
+                    top: 2px;
+                    height: 18rem;
+                    left: -12rem;
+                }
             }
         }
     }
@@ -110,7 +128,13 @@
         line-height: 16rem;
         font-weight: normal;
         @include tablet {
+            font-size: 10rem;
+            line-height: 13rem;
             width: 120%;
+        }
+        @include desktop {
+            font-size: 12rem;
+            line-height: 16rem;
         }
         @include desktop-large {
             font-size: 16rem;

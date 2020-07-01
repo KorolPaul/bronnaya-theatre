@@ -86,14 +86,15 @@ if (sliderGallery) {
 /* Event page */
 const eventMoreInfo = document.querySelector('.event_info-more');
 if (eventMoreInfo) {
+    const hidedElements = document.querySelectorAll('.event_hided-info');
+
     eventMoreInfo.addEventListener('click', function(e) {
         e.preventDefault();
 
-        const hidedElements = document.querySelectorAll('.event_hided-info');
         for (let i = 0; i < hidedElements.length; i++) {
-            hidedElements[i].classList.remove('event_hided-info');
+            hidedElements[i].classList.toggle('event_hided-info');
         }
-        e.target.style.display = 'none';
+        e.target.classList.toggle('opened');
     })
 }
 

@@ -2821,23 +2821,44 @@ h3,
     font-size: 11rem;
     line-height: 14rem;
     max-height: 42rem;
-    width: 120%;
+    width: 100%;
   }
 }
 
 @media all and (min-width: 1259px) {
   .carousel_item-title {
     font-size: 14rem;
-    line-height: 18rem;
+    line-height: 16rem;
     max-height: 54rem;
   }
 }
 
 @media all and (min-width: 1799px) {
   .carousel_item-title {
-    font-size: 18rem;
+    font-size: 20rem;
     line-height: 26rem;
     max-height: 78rem;
+  }
+}
+
+@media all and (min-width: 767px) {
+  .carousel_item-title__decorated {
+    font-size: 10rem;
+    line-height: 13rem;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .carousel_item-title__decorated {
+    font-size: 11rem;
+    line-height: 14rem;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .carousel_item-title__decorated {
+    font-size: 16rem;
+    line-height: 20rem;
   }
 }
 
@@ -2859,6 +2880,14 @@ h3,
   }
 }
 
+@media all and (min-width: 1799px) {
+  .carousel_item-title__decorated::before {
+    top: 2px;
+    height: 18rem;
+    left: -12rem;
+  }
+}
+
 .carousel_item-subtitle {
   color: #4A4A4A;
   font-size: 12rem;
@@ -2868,7 +2897,16 @@ h3,
 
 @media all and (min-width: 767px) {
   .carousel_item-subtitle {
+    font-size: 10rem;
+    line-height: 13rem;
     width: 120%;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .carousel_item-subtitle {
+    font-size: 12rem;
+    line-height: 16rem;
   }
 }
 
@@ -4027,9 +4065,9 @@ h3,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 }
 
@@ -4121,19 +4159,23 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle_title__big {
+    line-height: 1;
     font-size: 31rem;
+    margin-bottom: 8rem;
   }
 }
 
 @media all and (min-width: 1259px) {
   .spectacle_title__big {
     font-size: 50rem;
+    margin-bottom: 12rem;
   }
 }
 
 @media all and (min-width: 1799px) {
   .spectacle_title__big {
     font-size: 72rem;
+    margin-bottom: 14rem;
   }
 }
 
@@ -7137,6 +7179,11 @@ h3,
 .event_info-more:active .event_info-more-arrow {
   -webkit-transform: scale(1) translateY(-30%);
   transform: scale(1) translateY(-30%);
+}
+
+.event_info-more.opened .event_info-more-arrow {
+  -webkit-transform: scale(1) translateY(-30%) rotate(180deg);
+  transform: scale(1) translateY(-30%) rotate(180deg);
 }
 
 .event_main-info {
