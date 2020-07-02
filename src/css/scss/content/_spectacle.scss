@@ -192,10 +192,12 @@
         @include desktop {
             right: 30rem;
             top: 26rem;
+            font-size: 16rem;
         }
         @include desktop-large {
             right: 46rem;
             top: 40rem;
+            font-size: 22rem;
         }
 
         &::after {
@@ -205,18 +207,18 @@
     &_tags {
         position: absolute;
         left: 17rem;
-        bottom: 20rem;
+        bottom: 16rem;
         z-index: 2;
         @include tablet {
             left: 30rem;
         }
         @include desktop {
             left: 43rem;
-            bottom: 26rem;
+            bottom: 20rem;
         }
         @include desktop-large {
             left: 46rem;
-            bottom: 46rem;
+            bottom: 36rem;
         }
 
         .spectacle__line & {
@@ -491,6 +493,12 @@
         @include desktop-large {
             font-size: 20rem;
         }
+
+        .spectacle__big & {
+            @include desktop-large {
+                font-size: 20rem;
+            }
+        }
     }
     &_adress,
     &_duration {
@@ -548,10 +556,7 @@
         }
     }
     &_adress {
-        //border-bottom: 1rem dashed currentColor;
-        text-decoration: underline;
-        text-decoration-style: dashed;
-        text-underline-offset: 2rem;
+        border-bottom: 1rem dashed currentColor;
 
         &::before {
             content: "";
@@ -665,7 +670,7 @@
         line-height: 16rem;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: flex-start;
         min-height: 60rem;
         @include tablet {
             font-size: 11rem;
@@ -838,13 +843,14 @@
             @include tablet {
                 grid-row: 5 / 6;
                 grid-column: 1 / 2;
+                display: flex;
+                align-items: flex-end;
             }
 
             &:nth-child(2) {
                 @include tablet {
                     grid-row: 5 / 6;
                     grid-column: 2 / 3;
-                    display: flex;
                     align-items: center;
                 }
             }

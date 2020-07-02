@@ -49,7 +49,7 @@ if (spectacleTitles) {
     for (let i = 0; i < spectacleTitles.length; i++) {
         const title = spectacleTitles[i];
         const titleTextLength = title.innerText.length;
-        if (titleTextLength < 10) {
+        if (titleTextLength <= 10) {
             title.classList.add('spectacle_title__big');
         } else if (titleTextLength > 40) {
             title.classList.add('spectacle_title__small');
