@@ -161,8 +161,8 @@
     transition: .15s ease-in-out background, .15s ease-in-out color;
     border: 1px solid #E3E3E3;
 
-    &:nth-child(7n - 1),
-    &:nth-child(7n) {
+    &:nth-child(7n - 1):not(.qs-active),
+    &:nth-child(7n):not(.qs-active) {
       color: $bright_color;
     }
 }

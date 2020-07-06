@@ -227,6 +227,7 @@
             left: 6rem;
             top: 5rem;
             bottom: auto;
+            line-height: 1;
             @include tablet {
                 margin: 0;
                 position: absolute;
@@ -664,6 +665,12 @@
                 }
             }
         }
+
+        .spectacle__line & {
+            @include tablet {
+                width: 40%;
+            }
+        }
     }
     &_creators {
         font-size: 12rem;
@@ -738,15 +745,10 @@
                 max-width: none;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: flex-start;
             }
             @include media(1000px) {
-                padding-right: 25%;
-            }
-            @include desktop {
-                * {
-                    flex-shrink: 0;
-                }
+                padding-right: 15%;
             }
         }
     }
