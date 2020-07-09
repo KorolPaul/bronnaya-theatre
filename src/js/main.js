@@ -164,6 +164,14 @@ function togglePopup(e) {
     document.body.classList.toggle('popup-opened')
 }
 
+document.addEventListener('keydown', function (e) {
+    if (document.body.classList.contains('popup-opened')) {
+        if (e.keyCode === 27 || e.key === 'Escape') {
+            togglePopup();
+        }
+    }
+});
+
 const fadeElement = document.querySelector('.fade');
 const popupCloseElement = document.querySelector('.popup_close');
 
@@ -189,9 +197,19 @@ if (spectacleAdresses) {
 
 /* Search */
 function toggleSearch(e) {
-    e.preventDefault();
+    if (e) {
+        e.preventDefault();
+    }
     document.querySelector('.menu').classList.toggle('search-opened')
 }
+
+document.addEventListener('keydown', function (e) {
+    if (document.querySelector('.menu').classList.contains('search-opened')) {
+        if (e.keyCode === 27 || e.key === 'Escape') {
+            toggleSearch();
+        }
+    }
+});
 
 const searchButtons = document.querySelectorAll('#search-button, .menu_link__search');
 if (searchButtons) {

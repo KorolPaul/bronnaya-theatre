@@ -7,7 +7,18 @@ function toggleSidebar(e) {
         }
     }
     document.body.classList.toggle('sidebar-opened');
+
+    
 }
+
+document.addEventListener('keydown', function (e) {
+    if (document.body.classList.contains('sidebar-opened')) {
+        if (e.keyCode === 27 || e.key === 'Escape') {
+            toggleSidebar();
+        }
+    }
+});
+
 
 function hideFilters() {
     const filtersElements = document.querySelectorAll('.sidebar-filters');
