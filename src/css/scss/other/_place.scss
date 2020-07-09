@@ -60,36 +60,34 @@
         @include button;
         @include blue-button;
         font-size: 12rem;
-        line-height: 16rem;
-        padding: 15rem 20rem 17rem;
+        padding: 13rem 20rem 13rem;
         margin: 0 0 0 20rem;
+        line-height: 1;
         @include tablet {
             box-sizing: border-box;
             font-size: 11rem;
-            line-height: 16rem;
-            height: 38rem;
-            padding: 10rem 12rem 0;
+            padding: 10rem 12rem 12rem;
             margin-bottom: 13rem;
             margin-left: 30rem;
             //min-width: 151rem;
         }
         @include desktop {
             font-size: 16rem;
-            line-height: 16rem;
-            padding: 20rem 33rem 0;
+            padding: 20rem 33rem 22px;
             margin-bottom: 21rem;
             margin-left: 58rem;
-            min-height: 60rem;
             //min-width: 254rem;
         }
         @include desktop-large {
             font-size: 20rem;
             margin-bottom: 29rem;
-            line-height: 30rem;
-            height: 70rem;
             margin-left: 74rem;
-            min-height: 84rem;
-            padding-top: 25rem;
+            padding-top: 32rem;
+            padding-bottom: 34rem;
+        }
+
+        &::after {
+            content: none;
         }
     }
     &_map-holder {
@@ -158,11 +156,12 @@
         padding: 13rem 5rem 13rem;
         white-space: normal;
         text-align: center;
+        line-height: 1;
         @include tablet {
-            padding: 10rem 8rem 12rem;
+            padding: 13rem 8rem 9rem;
             max-width: none;
             margin: 0 8rem;
-            min-height: 37rem;
+            min-height: 42rem;
             box-sizing: border-box;
             flex-grow: 1;
             //min-width: 151rem;
@@ -175,7 +174,6 @@
             margin: 0 20rem;
             padding-top: 32rem;
             padding-bottom: 34rem;
-
         }
 
         &::after {

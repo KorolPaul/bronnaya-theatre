@@ -1,0 +1,19 @@
+.iframe-wrapper {
+    padding: 0 0 56%;
+    position: relative;
+    margin: 28rem 0 28rem;
+    @include tablet {
+        margin-top: 20rem;
+    }
+    @include desktop {
+        margin-bottom: 32rem;
+    }
+
+    iframe {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+}

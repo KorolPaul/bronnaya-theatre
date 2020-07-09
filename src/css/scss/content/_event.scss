@@ -431,6 +431,10 @@
         white-space: nowrap;
         border: none;
         box-shadow: none;
+
+        &::after {
+            content: none;
+        }
     }
     &_header,
     &_content {

@@ -42,5 +42,12 @@
             text-decoration: underline;
             box-shadow: none;
         }
+
+        &[disabled] {
+            pointer-events: none;
+            color: #979797;
+            background: #E3E3E3;
+            opacity: 1;
+        }
     }
 }

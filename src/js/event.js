@@ -106,7 +106,6 @@ if (ticketsMoreEl) {
         const hidedElements = document.querySelectorAll('.tickets-row__hidden');
         for (let i = 0; i < hidedElements.length; i++) {
             
-            console.log(hidedElements[i].classList)
             hidedElements[i].classList.remove('tickets-row__hidden');
         }
         e.target.style.display = 'none';
