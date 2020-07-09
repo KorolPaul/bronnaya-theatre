@@ -100,6 +100,15 @@
 
         a {
             color: $light_color;
+            text-decoration: underline;
+
+            &::after {
+                content: none;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
     &_columns {

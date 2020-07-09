@@ -2348,6 +2348,15 @@ h3,
 
 .footer_content a {
   color: #fff;
+  text-decoration: underline;
+}
+
+.footer_content a::after {
+  content: none;
+}
+
+.footer_content a:hover {
+  text-decoration: none;
 }
 
 .footer_columns {
@@ -7745,7 +7754,6 @@ h3,
   font-weight: bold;
   font-size: 16rem;
   line-height: 24rem;
-  border-bottom: 1px solid transparent;
   -webkit-transition: .2s ease-in-out border;
   transition: .2s ease-in-out border;
 }
@@ -7765,7 +7773,7 @@ h3,
 }
 
 .events_item:hover .events_item-title {
-  border-bottom-color: currentColor;
+  text-decoration: underline;
   color: #040304;
 }
 
