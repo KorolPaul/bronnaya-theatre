@@ -14,7 +14,7 @@
 
     &_input[type] {
         @include placeholder-color(#9B9B9B);
-        background: url(#{$img}/search.svg) no-repeat left center;
+        background:/* url(#{$img}/search.svg)*/ no-repeat left center;
         height: 40rem;
         line-height: 40rem;
         padding: 0 6rem 0 40rem;
@@ -23,16 +23,48 @@
         line-height: 40rem;
         border: none;
 
-        &:valid {
-            font-weight: bold;
-            background-image: url(#{$img}/search-back.svg);
-        }
         &:hover {
             @include placeholder-color(#9B9B9B);
         }
         &:invalid {
             border: none;
             outline: none;
+            box-shadow: none;
+        }
+    }
+    &_close {
+        padding: 0;
+        border: none;
+        height: 24rem;
+        width: 24rem;
+        background: url(#{$img}/search-back.svg) no-repeat center center;
+        position: absolute;
+        left: $layout_indent;
+        top: 20rem;
+        transition: .2s ease-in-out transform;
+        @include tablet {
+            left: 128rem;
+            top: 22rem;
+        }
+        @include desktop {
+            padding-right: 3vw;
+            left: 19vw;
+        }
+        @include desktop-large {
+            padding-right: 5vw;
+            left: 18vw;
+        }
+
+        &:hover {
+            background-color: transparent;
+            transform: scale(1.2);
+            border: none;
+            box-shadow: none;
+        }
+        &:active {
+            background-color: transparent;
+            transform: scale(1.1);
+            border: none;
             box-shadow: none;
         }
     }
@@ -55,7 +87,7 @@
         }
     }
 
-    &_close {
+    &_clear {
         background: transparent;
         border: none;
         padding: 6rem;
@@ -71,6 +103,8 @@
         top: 17rem;
         right: 13rem;
         z-index: 13;
+        transition: .2s ease-in-out transform;
+        cursor: pointer;
         @include desktop {
             right: 3vw;
         }
@@ -100,6 +134,13 @@
         }
         &::after {
             transform: rotateZ(-45deg) translate(1rem, -6rem);
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+        &:active {
+            transform: scale(1.1);
         }
 
     }

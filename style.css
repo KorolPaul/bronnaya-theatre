@@ -555,6 +555,25 @@ td:first-child {
   overflow: hidden;
 }
 
+input[type=search]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
 /*Form elements*/
 button,
 input[type="button"],
@@ -1566,6 +1585,7 @@ h3,
     font-size: 12rem;
     line-height: 20rem;
     margin: 18rem 0;
+    cursor: pointer;
   }
 }
 
@@ -3430,7 +3450,7 @@ h3,
 }
 
 .search_input[type] {
-  background: url(src/img/search.svg) no-repeat left center;
+  background: no-repeat left center;
   height: 40rem;
   line-height: 40rem;
   padding: 0 6rem 0 40rem;
@@ -3452,11 +3472,6 @@ h3,
   color: #9B9B9B;
 }
 
-.search_input[type]:valid {
-  font-weight: bold;
-  background-image: url(src/img/search-back.svg);
-}
-
 .search_input[type]:hover::-webkit-input-placeholder {
   color: #9B9B9B;
 }
@@ -3472,6 +3487,58 @@ h3,
 .search_input[type]:invalid {
   border: none;
   outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.search_close {
+  padding: 0;
+  border: none;
+  height: 24rem;
+  width: 24rem;
+  background: url(src/img/search-back.svg) no-repeat center center;
+  position: absolute;
+  left: 26rem;
+  top: 20rem;
+  -webkit-transition: .2s ease-in-out transform;
+  transition: .2s ease-in-out transform;
+}
+
+@media all and (min-width: 767px) {
+  .search_close {
+    left: 128rem;
+    top: 22rem;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .search_close {
+    padding-right: 3vw;
+    left: 19vw;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .search_close {
+    padding-right: 5vw;
+    left: 18vw;
+  }
+}
+
+.search_close:hover {
+  background-color: transparent;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.search_close:active {
+  background-color: transparent;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -3496,7 +3563,7 @@ h3,
   content: none;
 }
 
-.search_close {
+.search_clear {
   background: transparent;
   border: none;
   padding: 6rem;
@@ -3521,28 +3588,31 @@ h3,
   top: 17rem;
   right: 13rem;
   z-index: 13;
+  -webkit-transition: .2s ease-in-out transform;
+  transition: .2s ease-in-out transform;
+  cursor: pointer;
 }
 
 @media all and (min-width: 1259px) {
-  .search_close {
+  .search_clear {
     right: 3vw;
   }
 }
 
 @media all and (min-width: 1799px) {
-  .search_close {
+  .search_clear {
     right: 5vw;
   }
 }
 
-.search_close:hover, .search_close:active {
+.search_clear:hover, .search_clear:active {
   background: transparent;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-.search_close::before, .search_close::after {
+.search_clear::before, .search_clear::after {
   content: '';
   background: #4A4A4A;
   height: 2rem;
@@ -3552,14 +3622,24 @@ h3,
   transition: .2s ease-in-out transform;
 }
 
-.search_close::before {
+.search_clear::before {
   -webkit-transform: rotateZ(45deg) translate(0rem, 5rem);
   transform: rotateZ(45deg) translate(0rem, 5rem);
 }
 
-.search_close::after {
+.search_clear::after {
   -webkit-transform: rotateZ(-45deg) translate(1rem, -6rem);
   transform: rotateZ(-45deg) translate(1rem, -6rem);
+}
+
+.search_clear:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.search_clear:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .search_fade {
@@ -3940,6 +4020,10 @@ h3,
   height: auto;
 }
 
+.spectacle__big .spectacle_image-wrapper {
+  margin: 0;
+}
+
 .spectacle_image {
   display: block;
   width: 100%;
@@ -4111,7 +4195,7 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle_header {
-    min-height: 110rem;
+    min-height: 85rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4168,7 +4252,7 @@ h3,
   grid-column: 1 / 3;
   font-weight: bold;
   font-size: 33rem;
-  line-height: 1.2;
+  line-height: 1.08;
   margin: 0 0 4rem;
 }
 
@@ -4183,6 +4267,7 @@ h3,
   .spectacle_title {
     font-size: 36rem;
     margin-bottom: 8rem;
+    line-height: 1.11;
   }
 }
 
@@ -4237,8 +4322,9 @@ h3,
   .spectacle__big .spectacle_title {
     font-size: 46rem;
     line-height: 48rem;
-    margin-bottom: 30rem;
-    min-height: 110rem;
+    margin-bottom: 0;
+    min-height: 150rem;
+    grid-row: 2 / 3;
   }
 }
 
@@ -4247,7 +4333,7 @@ h3,
     font-size: 66rem;
     line-height: 66rem;
     margin-bottom: 34rem;
-    min-height: 130rem;
+    min-height: 150rem;
   }
 }
 
@@ -4256,7 +4342,7 @@ h3,
     font-size: 90rem;
     line-height: 86rem;
     margin-bottom: 56rem;
-    min-height: 182rem;
+    min-height: 190rem;
   }
 }
 
@@ -4374,7 +4460,7 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_description, .spectacle__big .spectacle_role {
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     grid-column: 1 / 2;
     font-size: 11rem;
     line-height: 16rem;
@@ -4802,7 +4888,7 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_info-column {
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
     grid-column: 1 / 2;
     width: auto;
     margin: 0 0 20rem;
@@ -4811,7 +4897,7 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_info-column:nth-child(2) {
-    grid-row: 3 / 5;
+    grid-row: 4 / 6;
     grid-column: 2 / 3;
     padding-right: 30rem;
   }
@@ -4912,7 +4998,7 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_controls-column {
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
     grid-column: 1 / 2;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4925,7 +5011,7 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_controls-column:nth-child(2) {
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
     grid-column: 2 / 3;
     -webkit-box-align: center;
     -ms-flex-align: center;

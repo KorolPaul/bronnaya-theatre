@@ -26,10 +26,11 @@
                     %img.menu_logo(src="src/img/logo-mobile-menu.svg" alt="")
 
                     .search
-                        .search_close(id="search-close")
                         .search_fade
                         .search_content
-                            %input.search_input(type="search" placeholder="поиск" required="true")
+                            .search_clear(id="search-clear")
+                            %button.search_close(id="search-close")
+                            %input.search_input(type="search" placeholder="поиск" required="true" id="searchInput")
                             .search_results
                                 %a.search_result(href="spectacle.html") макбет
                                 %a.search_result(href="spectacle.html") леди макбет

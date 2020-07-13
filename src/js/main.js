@@ -200,7 +200,21 @@ function toggleSearch(e) {
     if (e) {
         e.preventDefault();
     }
-    document.querySelector('.menu').classList.toggle('search-opened')
+
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('search-opened');
+    clearSearchField();
+
+    if (menu.classList.contains('search-opened')) {
+        console.log(document.querySelector('.search_input'))
+        setTimeout(() => {
+            document.getElementById('searchInput').focus();
+        }, 300)
+    }
+}
+
+function clearSearchField() {
+    document.querySelector('.search_input').value = '';
 }
 
 document.addEventListener('keydown', function (e) {
@@ -221,4 +235,12 @@ if (searchButtons) {
 const searchClose = document.getElementById('search-close');
 if (searchClose) {
     searchClose.addEventListener('click', toggleSearch)
+}
+const searchFade = document.querySelector('.search_fade');
+if (searchFade) {
+    searchFade.addEventListener('click', toggleSearch)
+}
+const searchClear = document.getElementById('search-clear');
+if (searchClear) {
+    searchClear.addEventListener('click', clearSearchField)
 }
