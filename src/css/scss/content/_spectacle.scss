@@ -24,6 +24,13 @@
     @include tablet {
         padding: 0;
         grid-template-rows: auto auto auto auto auto;
+        min-height: 400rem;
+    }
+    @include desktop {
+        min-height: 570rem;
+    }
+    @include desktop-large {
+        min-height: 822rem;
     }
 
     &::after {
@@ -57,6 +64,21 @@
     &__minified {
         display: block;
     }
+    &__alternate {
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 530rem;
+        }
+        @include desktop {
+            min-height: 634rem;
+        }
+        @include desktop-large {
+            min-height: 858rem;
+        }
+    }
+
     &__line {
         display: flex;
         padding-top: 28rem;
@@ -64,6 +86,7 @@
         @include tablet {
             padding-top: 22rem;
             padding-bottom: 20rem;
+            min-height: auto;
         }
         @include desktop {
             padding-top: 36rem;
