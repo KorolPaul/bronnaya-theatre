@@ -69,13 +69,13 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            min-height: 530rem;
+            min-height: 510rem;
         }
         @include desktop {
             min-height: 634rem;
         }
         @include desktop-large {
-            min-height: 858rem;
+            min-height: 889rem;
         }
     }
 

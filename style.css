@@ -3765,7 +3765,7 @@ h3,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    min-height: 530rem;
+    min-height: 510rem;
   }
 }
 
@@ -3777,7 +3777,7 @@ h3,
 
 @media all and (min-width: 1799px) {
   .spectacle__alternate {
-    min-height: 858rem;
+    min-height: 889rem;
   }
 }
 
