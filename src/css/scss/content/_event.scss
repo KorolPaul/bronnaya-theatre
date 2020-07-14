@@ -464,12 +464,13 @@
         @include tablet {
             padding-bottom: 20rem;
             border-bottom: none;
+            margin-bottom: 30px;
         }
         @include desktop {
-            padding-bottom: 32rem;
+            padding-bottom: 52rem;
         }
         @include desktop-large {
-            padding-bottom: 42rem;
+            padding-bottom: 62rem;
         }
 
         &::after {
@@ -500,17 +501,19 @@
             box-sizing: border-box;
             position: absolute;
             right: 0;
-            bottom: 0;
+            bottom: 22rem;
             width: 200rem;
             padding: 0 20rem 0 0;
         }
         @include desktop {
             width: 340rem;
             padding-right: 40rem;
+            bottom: 88rem;
         }
         @include desktop-large {
             width: 488rem;
             padding-right: 60rem;
+            bottom: 150rem;
         }
     }
 }

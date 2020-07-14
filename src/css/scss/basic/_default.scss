@@ -39,7 +39,7 @@ a {
         border-bottom: 1rem solid currentColor;
         transition: .1s ease-in-out transform;
         transform-origin: right center;
-        @include desktop {
+        @include desktop-large {
             border-bottom-width: 2rem;
         }
     }

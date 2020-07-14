@@ -32,6 +32,45 @@
         }
     }
 
+    &_info {
+        display: none;
+        @include tablet {
+            display: block;
+            color: $light_color;
+            font-weight: 300;
+            font-size: 11rem;
+            line-height: 16rem;
+            padding: 14rem 64rem 14rem 14rem;
+            background: rgba(4, 3, 4, 0.35);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        @include desktop {
+            font-size: 12rem;
+            line-height: 18rem;
+            padding: 18rem 94rem 22rem 22rem;
+        }
+        @include desktop-large {
+            font-size: 18px;
+            line-height: 24px;
+            padding: 30rem 150rem 35rem 32rem;
+        }
+    }
+    &_info-count {
+        position: absolute;
+        right: 15rem;
+        bottom: 12rem;
+        @include desktop {
+            right: 22rem;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+        @include desktop-large {
+            right: 33rem;
+        }
+    }
     &_counter {
         right: 26rem;
         top: 101.5%;
@@ -190,7 +229,7 @@
         top: 4rem;
         opacity: 0;
         z-index: 1;
-        transition: .2s ease-in-out opacity;
+        transition: 0.2s ease-in-out opacity;
 
         .slider_image-wrapper:hover & {
             opacity: 1;

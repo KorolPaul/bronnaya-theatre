@@ -163,9 +163,12 @@
     }
     &_item-title {
         font-weight: bold;
-        border-bottom: 1px solid transparent;
         width: 110%;
-        transition: .2s ease-in-out border;
+        text-decoration: underline;
+
+        .people_item:hover & {
+            text-decoration: none;
+        }
     }
     &_item-subtitle {
         color: #4a4a4a;
