@@ -3507,20 +3507,18 @@ h3,
 @media all and (min-width: 767px) {
   .search_close {
     left: 128rem;
-    top: 26rem;
+    top: 23rem;
   }
 }
 
 @media all and (min-width: 1259px) {
   .search_close {
-    padding-right: 3vw;
     left: 19vw;
   }
 }
 
 @media all and (min-width: 1799px) {
   .search_close {
-    padding-right: 5vw;
     left: 18vw;
   }
 }
@@ -3620,7 +3618,7 @@ h3,
 @media all and (min-width: 1799px) {
   .search_clear {
     right: 5vw;
-    top: 26rem;
+    top: 22rem;
   }
 }
 
@@ -3698,6 +3696,7 @@ h3,
 @media all and (min-width: 767px) {
   .search_content {
     padding-left: 128rem;
+    line-height: 0;
   }
 }
 
@@ -3842,7 +3841,6 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big {
-    grid-template-columns: 2fr 3fr;
     -webkit-column-gap: 20rem;
     -moz-column-gap: 20rem;
     column-gap: 20rem;
@@ -3997,7 +3995,7 @@ h3,
 }
 
 .spectacle_image-wrapper::before {
-  content: '';
+  content: "";
   background: rgba(4, 3, 4, 0.35);
   position: absolute;
   left: 0;
@@ -4045,10 +4043,6 @@ h3,
 
 .spectacle__minified .spectacle_image-wrapper {
   height: auto;
-}
-
-.spectacle__big .spectacle_image-wrapper {
-  margin: 0;
 }
 
 .spectacle_image {
@@ -4347,71 +4341,65 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_title {
-    font-size: 46rem;
-    line-height: 48rem;
-    margin-bottom: 0;
-    min-height: 124rem;
-    grid-row: 2 / 3;
+    font-size: 34rem;
+    line-height: 34rem;
+    margin-bottom: 8px;
   }
 }
 
 @media all and (min-width: 1259px) {
   .spectacle__big .spectacle_title {
-    font-size: 66rem;
-    line-height: 66rem;
-    margin-bottom: 34rem;
-    min-height: 150rem;
+    font-size: 56rem;
+    line-height: 56rem;
   }
 }
 
 @media all and (min-width: 1799px) {
   .spectacle__big .spectacle_title {
-    font-size: 90rem;
-    line-height: 86rem;
-    margin-bottom: 56rem;
-    min-height: 190rem;
+    font-size: 82rem;
+    line-height: 85rem;
   }
 }
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_title__small {
-    font-size: 31rem;
-    line-height: 32rem;
+    font-size: 23rem;
+    line-height: 25rem;
   }
 }
 
 @media all and (min-width: 1259px) {
   .spectacle__big .spectacle_title__small {
-    font-size: 50rem;
+    font-size: 36rem;
+    line-height: 40rem;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .spectacle__big .spectacle_title__small {
+    font-size: 51rem;
     line-height: 52rem;
   }
 }
 
-@media all and (min-width: 1799px) {
-  .spectacle__big .spectacle_title__small {
-    font-size: 64rem;
-    line-height: 66rem;
-  }
-}
-
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_title__big {
-    font-size: 55rem;
+    font-size: 48rem;
     line-height: 48rem;
   }
 }
 
 @media all and (min-width: 1259px) {
   .spectacle__big .spectacle_title__big {
-    font-size: 86rem;
-    line-height: 86rem;
+    font-size: 80rem;
+    line-height: 60rem;
   }
 }
 
 @media all and (min-width: 1799px) {
   .spectacle__big .spectacle_title__big {
-    font-size: 123rem;
-    line-height: 123rem;
+    font-size: 115rem;
+    line-height: 100rem;
   }
 }
 
@@ -4487,8 +4475,6 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_description, .spectacle__big .spectacle_role {
-    grid-row: 4 / 5;
-    grid-column: 1 / 2;
     font-size: 11rem;
     line-height: 16rem;
   }
@@ -4509,7 +4495,7 @@ h3,
 }
 
 .spectacle_role {
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 @media all and (min-width: 767px) {
@@ -4567,24 +4553,6 @@ h3,
     font-size: 20rem;
     margin-bottom: 20rem;
     margin-left: 22rem;
-  }
-}
-
-@media all and (min-width: 767px) {
-  .spectacle__big .spectacle_adress, .spectacle__big .spectacle_duration {
-    margin-bottom: 0;
-  }
-}
-
-@media all and (min-width: 1259px) {
-  .spectacle__big .spectacle_adress, .spectacle__big .spectacle_duration {
-    margin-bottom: 0;
-  }
-}
-
-@media all and (min-width: 1799px) {
-  .spectacle__big .spectacle_adress, .spectacle__big .spectacle_duration {
-    margin-bottom: 0;
   }
 }
 
@@ -4876,13 +4844,6 @@ h3,
   }
 }
 
-@media all and (min-width: 767px) {
-  .spectacle__big .spectacle_info {
-    display: contents;
-    padding-right: 50rem;
-  }
-}
-
 .spectacle__alternate .spectacle_info {
   padding: 0;
 }
@@ -4926,6 +4887,18 @@ h3,
 }
 
 @media all and (min-width: 767px) {
+  .spectacle__big .spectacle_info {
+    max-width: 220rem;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .spectacle__big .spectacle_info {
+    max-width: 360rem;
+  }
+}
+
+@media all and (min-width: 767px) {
   .spectacle_info-column {
     position: relative;
     width: 50%;
@@ -4934,8 +4907,6 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_info-column {
-    grid-row: 5 / 6;
-    grid-column: 1 / 2;
     width: auto;
     margin: 0 0 6rem;
   }
@@ -4949,8 +4920,6 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_info-column:nth-child(2) {
-    grid-row: 4 / 6;
-    grid-column: 2 / 3;
     padding-right: 30rem;
   }
 }
@@ -5036,8 +5005,19 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_controls {
-    display: contents;
-    padding-right: 50rem;
+    max-width: 290rem;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .spectacle__big .spectacle_controls {
+    max-width: 470rem;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .spectacle__big .spectacle_controls {
+    max-width: 670rem;
   }
 }
 
@@ -5050,8 +5030,6 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_controls-column {
-    grid-row: 6 / 7;
-    grid-column: 1 / 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5063,8 +5041,6 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_controls-column:nth-child(2) {
-    grid-row: 6 / 7;
-    grid-column: 2 / 3;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -5239,12 +5215,6 @@ h3,
   .spectacle_more-info {
     font-size: 20rem;
     line-height: 24rem;
-  }
-}
-
-@media all and (min-width: 767px) {
-  .spectacle__big .spectacle_more-info {
-    text-align: left;
   }
 }
 
@@ -6237,6 +6207,7 @@ h3,
     left: 0;
     right: 0;
     bottom: 0;
+    min-height: 10rem;
   }
 }
 

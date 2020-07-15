@@ -44,7 +44,7 @@ document.addEventListener("scroll", function(e) {
 });
 
 /* Title size calculation */
-const spectacleTitles = document.querySelectorAll('.spectacle_header .spectacle_title');
+const spectacleTitles = document.querySelectorAll('.spectacle:not(.spectacle__big) .spectacle_header .spectacle_title');
 if (spectacleTitles) {
     for (let i = 0; i < spectacleTitles.length; i++) {
         const title = spectacleTitles[i];
@@ -52,6 +52,18 @@ if (spectacleTitles) {
         if (titleTextLength <= 10) {
             title.classList.add('spectacle_title__big');
         } else if (titleTextLength > 40) {
+            title.classList.add('spectacle_title__small');
+        }
+    }
+}
+const spectacleBigTitles = document.querySelectorAll('.spectacle__big .spectacle_title');
+if (spectacleBigTitles) {
+    for (let i = 0; i < spectacleBigTitles.length; i++) {
+        const title = spectacleBigTitles[i];
+        const titleTextLength = title.innerText.length;
+        if (titleTextLength <= 14) {
+            title.classList.add('spectacle_title__big');
+        } else if (titleTextLength > 21) {
             title.classList.add('spectacle_title__small');
         }
     }

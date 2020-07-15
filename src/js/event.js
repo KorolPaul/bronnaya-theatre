@@ -4,7 +4,9 @@ if (slider) {
     const currentSlideEl = slider.querySelector('.slider_counter');
 
     const setcounter = function (info) {
-        currentSlideEl.innerText = `${info.displayIndex}/${info.pages}`;
+        if (currentSlideEl) {
+            currentSlideEl.innerText = `${info.displayIndex}/${info.pages}`;
+        }
     }
 
     const sliderTNS = tns({
