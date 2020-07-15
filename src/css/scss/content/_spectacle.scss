@@ -212,11 +212,13 @@
         color: $light_color;
         font-size: 14rem;
         line-height: 14rem;
+        font-weight: 300;
         position: absolute;
         right: 24rem;
         top: 17rem;
         text-decoration: none;
         z-index: 2;
+        text-align: right;
         @include desktop {
             right: 30rem;
             top: 26rem;
@@ -230,6 +232,29 @@
 
         &::after {
             display: none;
+        }
+
+        & > div {
+            margin: 0 0 3rem;
+            @include desktop {
+                margin-bottom: 6rem;
+            }
+        }
+    }
+    &_date-slash {
+        background: url(#{$img}/slash-light.svg) no-repeat center center;
+        background-size: 100% auto;
+        width: 11rem;
+        height: 16rem;
+        display: inline-block;
+        vertical-align: middle;
+        margin: -2rem 5rem 0;
+        @include desktop {
+            width: 17rem;
+            height: 21rem;
+        }
+        @include desktop-large {
+            margin: -2rem 10rem 0;
         }
     }
     &_tags {
@@ -1035,7 +1060,8 @@
             }
         }
     }
-    &_bottom-date {
+    &_bottom-date,
+    &_bottom-date-link {
         display: block;
         font-weight: bold;
         font-size: 14rem;
@@ -1051,6 +1077,20 @@
         @include desktop-large {
             font-size: 20rem;
             line-height: 30rem;
+        }
+    }
+    &_bottom-date-link {
+        display: inline-block;
+        margin: 5rem 0 0;
+        padding: 0 15rem 3rem 0;
+        background: url(#{$img}/chevron-right.svg) no-repeat center right;
+        background-size: auto 10rem;
+        @include desktop {
+            background-size: 9rem 15rem;
+        }
+
+        &::after {
+            content: none;
         }
     }
     &_content {

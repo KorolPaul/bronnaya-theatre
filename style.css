@@ -4068,11 +4068,13 @@ h3,
   color: #fff;
   font-size: 14rem;
   line-height: 14rem;
+  font-weight: 300;
   position: absolute;
   right: 24rem;
   top: 17rem;
   text-decoration: none;
   z-index: 2;
+  text-align: right;
 }
 
 @media all and (min-width: 1259px) {
@@ -4093,6 +4095,39 @@ h3,
 
 .spectacle_date::after {
   display: none;
+}
+
+.spectacle_date > div {
+  margin: 0 0 3rem;
+}
+
+@media all and (min-width: 1259px) {
+  .spectacle_date > div {
+    margin-bottom: 6rem;
+  }
+}
+
+.spectacle_date-slash {
+  background: url(src/img/slash-light.svg) no-repeat center center;
+  background-size: 100% auto;
+  width: 11rem;
+  height: 16rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2rem 5rem 0;
+}
+
+@media all and (min-width: 1259px) {
+  .spectacle_date-slash {
+    width: 17rem;
+    height: 21rem;
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .spectacle_date-slash {
+    margin: -2rem 10rem 0;
+  }
 }
 
 .spectacle_tags {
@@ -5375,7 +5410,7 @@ h3,
   }
 }
 
-.spectacle_bottom-date {
+.spectacle_bottom-date, .spectacle_bottom-date-link {
   display: block;
   font-weight: bold;
   font-size: 14rem;
@@ -5383,24 +5418,42 @@ h3,
 }
 
 @media all and (min-width: 767px) {
-  .spectacle_bottom-date {
+  .spectacle_bottom-date, .spectacle_bottom-date-link {
     font-size: 11rem;
     line-height: 16rem;
   }
 }
 
 @media all and (min-width: 1259px) {
-  .spectacle_bottom-date {
+  .spectacle_bottom-date, .spectacle_bottom-date-link {
     font-size: 14rem;
     line-height: 20rem;
   }
 }
 
 @media all and (min-width: 1799px) {
-  .spectacle_bottom-date {
+  .spectacle_bottom-date, .spectacle_bottom-date-link {
     font-size: 20rem;
     line-height: 30rem;
   }
+}
+
+.spectacle_bottom-date-link {
+  display: inline-block;
+  margin: 5rem 0 0;
+  padding: 0 15rem 3rem 0;
+  background: url(src/img/chevron-right.svg) no-repeat center right;
+  background-size: auto 10rem;
+}
+
+@media all and (min-width: 1259px) {
+  .spectacle_bottom-date-link {
+    background-size: 9rem 15rem;
+  }
+}
+
+.spectacle_bottom-date-link::after {
+  content: none;
 }
 
 .spectacle_content {
