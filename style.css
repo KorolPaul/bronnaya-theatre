@@ -4923,13 +4923,19 @@ h3,
 
 @media all and (min-width: 767px) {
   .spectacle__big .spectacle_info {
-    max-width: 220rem;
+    width: 196rem;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .spectacle__big .spectacle_info {
+    width: 333rem;
   }
 }
 
 @media all and (min-width: 1799px) {
   .spectacle__big .spectacle_info {
-    max-width: 360rem;
+    width: 520rem;
   }
 }
 
@@ -5383,7 +5389,7 @@ h3,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    min-height: 64rem;
+    min-height: 72rem;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;

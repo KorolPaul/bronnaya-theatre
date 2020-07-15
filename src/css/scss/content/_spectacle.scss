@@ -793,10 +793,13 @@
         }
         .spectacle__big & {
             @include tablet {
-                max-width: 220rem;
+                width: 196rem;
+            }
+            @include desktop {
+                width: 333rem;
             }
             @include desktop-large {
-                max-width: 360rem;
+                width: 520rem;
             }
         }
     }
@@ -1044,7 +1047,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            min-height: 64rem;
+            min-height: 72rem;
             justify-content: flex-end;
         }
         @include desktop {
