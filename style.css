@@ -3945,6 +3945,12 @@ h3,
   }
 }
 
+@media all and (min-width: 767px) {
+  .spectacle__minified {
+    min-height: 0;
+  }
+}
+
 .spectacles__without-dividers .spectacle {
   margin-bottom: 0;
 }

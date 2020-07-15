@@ -119,6 +119,11 @@
             }
         }
     }
+    &__minified {
+        @include tablet {
+            min-height: 0;
+        }
+    }
     .spectacles__without-dividers & {
         margin-bottom: 0;
         @include tablet {
