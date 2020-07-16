@@ -75,6 +75,7 @@
         }
         @include desktop-large {
             min-height: 889rem;
+            margin-bottom: 70rem;
         }
     }
 
@@ -616,8 +617,8 @@
                 width: 9rem;
             }
             @include desktop {
-                height: 12rem;
-                width: 10rem;
+                height: 14rem;
+                width: 12rem;
                 top: 4rem;
             }
             @include desktop-large {
@@ -719,7 +720,7 @@
         line-height: 16rem;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: flex-end;
         min-height: 60rem;
         @include tablet {
             font-size: 11rem;
@@ -762,7 +763,7 @@
             align-items: flex-start;
         }
         @include desktop {
-            margin: 0 0 20rem;
+            margin: 0 0 15rem;
             max-width: 540rem;
             padding-right: 40rem;
         }
@@ -833,7 +834,7 @@
         @include tablet {
             font-size: 11rem;
             top: auto;
-            bottom: 0;
+            bottom: 1rem;
         }
         @include desktop {
             font-size: 14rem;
@@ -1037,6 +1038,11 @@
                 width: auto;
             }
         }
+        .spectacle__alternate & {
+            @include desktop {
+                align-items: flex-end;
+            }
+        }
     }
     &_bottom-info {
         padding-right: 30rem;
@@ -1054,6 +1060,10 @@
             padding-right: 25rem;
             min-height: auto;
             justify-content: space-between;
+            min-height: 84rem;
+        }
+        @include desktop-large {
+            min-height: 110rem;
         }
 
         .spectacle__line & {

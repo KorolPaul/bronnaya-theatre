@@ -3,10 +3,10 @@
         margin-left: 110rem;
     }
     @include desktop {
-        margin-left: 16vw;
+        margin-left: 17vw;
     }
     @include desktop-large {
-        margin-left: 15vw;
+        margin-left: 16vw;
     }
 
     &_mobile {
@@ -90,12 +90,12 @@
         @include desktop {
             font-size: 11rem;
             line-height: 18rem;
-            padding: 26rem 52rem 24rem 20rem;
+            padding: 26rem 52rem 24rem 2.1vw;
         }
         @include desktop-large {
             font-size: 11rem;
             line-height: 18rem;
-            padding: 46rem 100rem 28rem 50rem;
+            padding: 46rem 100rem 28rem 2.1vw;
         }
 
         a {

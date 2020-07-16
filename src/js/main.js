@@ -63,7 +63,7 @@ if (spectacleBigTitles) {
         const titleTextLength = title.innerText.length;
         if (titleTextLength <= 14) {
             title.classList.add('spectacle_title__big');
-        } else if (titleTextLength > 21) {
+        } else if (titleTextLength >= 20) {
             title.classList.add('spectacle_title__small');
         }
     }
@@ -96,7 +96,7 @@ if (carousels.length) {
                     items: 6.8,
                 },
                 1920: {
-                    items: 8,
+                    items: 7.2,
                 },
             }
         });

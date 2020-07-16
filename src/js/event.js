@@ -49,7 +49,9 @@ if (sliderGallery) {
     const currentSlideEl = sliderGallery.querySelector('.slider_counter');
 
     const setcounter = function (info) {
-        currentSlideEl.innerText = `${info.displayIndex}/${info.slideCount}`;
+        if (currentSlideEl) {
+            currentSlideEl.innerText = `${info.displayIndex}/${info.slideCount}`;
+        }
     }
 
     const sliderTNS = tns({

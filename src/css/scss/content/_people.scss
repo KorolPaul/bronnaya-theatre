@@ -116,17 +116,17 @@
     &_item {
         display: block;
         font-size: 12rem;
-        line-height: 18rem;
+        line-height: 14rem;
         @include tablet {
-            line-height: 22rem;
+            line-height: 16rem;
         }
         @include desktop {
             font-size: 18rem;
-            line-height: 32rem;
+            line-height: 22rem;
         }
         @include desktop-large {
             font-size: 26rem;
-            line-height: 48rem;
+            line-height: 32rem;
         }
 
         &::after {
@@ -155,7 +155,7 @@
     &_item-image {
         width: 100%;
         border-radius: 50%;
-        transition: .2s ease-in-out transform;
+        transition: 0.2s ease-in-out transform;
 
         .people_item:hover & {
             transform: scale(1.08);
@@ -165,6 +165,20 @@
         font-weight: bold;
         width: 110%;
         text-decoration: underline;
+        font-size: 14rem;
+        line-height: 18rem;
+        @include tablet {
+            margin: 0 0 3rem;
+        }
+        @include desktop {
+            font-size: 22rem;
+            line-height: 24rem;
+            margin: 0 0 6rem;
+        }
+        @include desktop-large {
+            font-size: 32rem;
+            line-height: 38rem;
+        }
 
         .people_item:hover & {
             text-decoration: none;

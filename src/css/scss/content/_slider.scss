@@ -47,6 +47,9 @@
             right: 0;
             bottom: 0;
             min-height: 10rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: .2s ease-in-out opacity;
         }
         @include desktop {
             font-size: 12rem;
@@ -57,6 +60,11 @@
             font-size: 18px;
             line-height: 24px;
             padding: 30rem 150rem 35rem 32rem;
+        }
+
+        .slider_item:hover & {
+            opacity: 1;
+            pointer-events: all;
         }
     }
     &_info-count {
