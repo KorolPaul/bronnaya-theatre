@@ -43,10 +43,11 @@
     &:disabled,
     &:disabled:hover,
     &:disabled:active {
-        background-color: rgba(0, 0, 0, 0.8);
-        opacity: 0.2;
+        background-color: #E5E5E5;
+        opacity: 1;
         box-shadow: none;
         cursor: default;
+        border-color: transparent;
     }
 }
 

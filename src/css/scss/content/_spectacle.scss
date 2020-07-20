@@ -537,6 +537,17 @@
     }
     &_role {
         color: #4a4a4a;
+        font-size: 16rem;
+        line-height: 20rem;
+        font-weight: normal;
+        @include desktop {
+            font-size: 16rem;
+            line-height: 24rem;
+        }
+        @include desktop-large {
+            font-size: 22rem;
+            line-height: 28rem;
+        }
     }
     &_description {
         @include tablet {
@@ -1096,8 +1107,11 @@
         display: inline-block;
         margin: 5rem 0 0;
         padding: 0 15rem 3rem 0;
-        background: url(#{$img}/chevron-right.svg) no-repeat center right;
+        background: url(#{$img}/chevron-right.svg) no-repeat  100% 45%;
         background-size: auto 10rem;
+        @include tablet {
+            background-position: right center;
+        }
         @include desktop {
             background-size: 9rem 15rem;
         }

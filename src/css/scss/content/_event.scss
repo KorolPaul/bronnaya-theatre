@@ -189,11 +189,11 @@
             left: 0;
             width: 20rem;
             height: 20rem;
-            background: url(#{$img}/clock.svg) no-repeat 0 0 / contain;
+            background: url(#{$img}/clock.svg) no-repeat 0 0;
+            background-size: 98% auto;
             @include desktop {
                 width: 34rem;
                 height: 34rem;
-                background-size: 100% auto;
             }
             @include desktop-large {
                 width: 48rem;
@@ -211,17 +211,17 @@
             left: -25rem;
             width: 20rem;
             height: 40rem;
-            background: url(#{$img}/marker.svg) no-repeat 0 0 / contain;
+            background: url(#{$img}/marker.svg) no-repeat 0 0;
+            background-size: 98% auto;
             transition: .2s ease-in-out transform;
             @include desktop {
                 width: 34rem;
                 height: 44rem;
                 left: -50rem;
-                background-size: 100% auto;
             }
             @include desktop-large {
                 width: 48rem;
-                height: 57rem;
+                height: 63rem;
                 left: -72rem;
             }
         }
