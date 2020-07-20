@@ -10,11 +10,17 @@
         padding: $layout_indent 36rem 24rem;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
         @include tablet {
+            width: 637rem;
             padding: 50rem 50rem 40rem;
         }
         @include desktop {
+            width: 1055rem;
             padding: 74rem 92rem 60rem;
+        }
+        @include desktop-large {
+            width: 1536rem;
         }
     }
 
@@ -53,12 +59,12 @@
         font-size: 40rem;
         line-height: 48rem;
         margin: 0 0 18rem;
-        @include tablet {
+        @include desktop {
             font-size: 66rem;
             line-height: 76rem;
             margin-bottom: 28rem;
         }
-        @include desktop {
+        @include desktop-large {
             font-size: 90rem;
             line-height: 106rem;
             margin-bottom: 50rem;

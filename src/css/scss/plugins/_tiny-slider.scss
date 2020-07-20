@@ -262,7 +262,7 @@ $perpage: 3;
         background-size: 13rem 24rem;
         transition: .2s ease-in-out transform, .2s ease-in-out opacity;
         @include desktop {
-            background-size: 18rem 34rem;
+            background-size: 100% auto;
         }
 
         &[data-controls="prev"] {

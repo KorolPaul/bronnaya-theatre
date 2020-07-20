@@ -1,7 +1,7 @@
 const galleryPopup = document.querySelector('.gallery-popup');
 if (galleryPopup) {
     function toggleGallery() {
-        document.body.classList.toggle('popup-opened');
+        document.body.classList.toggle('gallery-popup-opened');
     }
 
     
