@@ -142,3 +142,15 @@ if (fixedButton) {
         }
     });
 }
+
+/* Share links */
+const shareButtons = document.querySelectorAll('.share_item');
+if (shareButtons) {
+    for (let i = 0; i < shareButtons.length; i++) {
+        const button = shareButtons[i];
+        const url = button.href;
+
+        button.setAttribute('href', url.replace('{XXX}', location.href));
+        console.log(url)
+    }
+}

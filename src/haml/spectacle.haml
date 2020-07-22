@@ -231,7 +231,13 @@
                     .event_share
                         .share
                             .share_title поделиться
-                            .addthis_sharing_toolbox
+                            .share_items
+                                %a.share_item(href="https://vk.com/share.php?url={XXX}")
+                                    %img.share_icon(src="src/img/share-vk.svg" alt="")
+                                %a.share_item(href="https://t.me/share/url?url={XXX}")
+                                    %img.share_icon(src="src/img/share-fb.svg" alt="")
+                                %a.share_item(href="https://www.facebook.com/sharer/sharer.php?u={XXX}")
+                                    %img.share_icon(src="src/img/share-t.svg" alt="")
 
                 .partners
                     .partners_list
@@ -347,7 +353,6 @@
                     %a.footer_outer-link(href="#") mos.ru
 
 
-        %script(src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5642faf671d1921e" async="async")
         %script(src="src/js/tiny-slider.min.js")
         %script(src="src/js/main.js")
         %script(src="src/js/event.js")

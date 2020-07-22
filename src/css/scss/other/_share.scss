@@ -28,4 +28,41 @@
             margin-bottom: 28rem;
         }
     }
+    &_items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include tablet {
+            width: 90%;
+        }
+    }
+    &_item {
+        transition: .2s ease-in-out opacity;
+
+        &:hover {
+            opacity: .8;
+        }
+        &:active {
+            opacity: .5;
+        }
+        &::after {
+            content: none;
+        }
+    }
+    &_icon {
+        width: 49rem;
+        height: 49rem;
+        @include tablet {
+            width: 30rem;
+            height: 30rem;
+        }
+        @include desktop {
+            width: 49rem;
+            height: 49rem;
+        }
+        @include desktop-large {
+            width: 49rem;
+            height: 49rem;
+        }
+    }
 }
