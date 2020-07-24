@@ -461,10 +461,12 @@
                 @include desktop {
                     font-size: 80rem;
                     line-height: 60rem;
+                    margin-bottom: 18rem;
                 }
                 @include desktop-large {
                     font-size: 115rem;
                     line-height: 100rem;
+                    margin-bottom: 20rem;
                 }
             }
         }

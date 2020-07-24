@@ -3019,6 +3019,12 @@ h3,
   filter: grayscale(1) brightness(0.5);
 }
 
+@media all and (min-width: 767px) {
+  .tabs {
+    padding: 0 0 0 22rem;
+  }
+}
+
 @media all and (min-width: 1259px) {
   .tabs {
     padding: 0 36rem;
@@ -4458,6 +4464,7 @@ h3,
   .spectacle__big .spectacle_title__big {
     font-size: 80rem;
     line-height: 60rem;
+    margin-bottom: 18rem;
   }
 }
 
@@ -4465,6 +4472,7 @@ h3,
   .spectacle__big .spectacle_title__big {
     font-size: 115rem;
     line-height: 100rem;
+    margin-bottom: 20rem;
   }
 }
 
@@ -6892,11 +6900,13 @@ h3,
   display: block;
   font-size: 12rem;
   line-height: 14rem;
+  word-break: break-all;
 }
 
 @media all and (min-width: 767px) {
   .people_item {
     line-height: 16rem;
+    word-break: normal;
   }
 }
 
@@ -7102,6 +7112,31 @@ h3,
   .event_tags {
     left: calc(100vw - 585rem - 18vw);
     margin-top: 60rem;
+  }
+}
+
+.event_slider-wrapper__single .event_tags {
+  left: 48rem;
+  top: 28rem;
+}
+
+@media all and (min-width: 767px) {
+  .event_slider-wrapper__single .event_tags {
+    left: calc(100vw - 230rem - 128rem);
+    top: 100%;
+    margin: 25rem 0 0;
+  }
+}
+
+@media all and (min-width: 1259px) {
+  .event_slider-wrapper__single .event_tags {
+    left: calc(100vw - 384rem - 19vw);
+  }
+}
+
+@media all and (min-width: 1799px) {
+  .event_slider-wrapper__single .event_tags {
+    left: calc(100vw - 585rem - 18vw);
   }
 }
 
@@ -7391,7 +7426,7 @@ h3,
   color: #FF0066;
   font-weight: 300;
   font-size: 10rem;
-  line-height: 18rem;
+  line-height: 20rem;
   letter-spacing: -0.583333rem;
   height: 20rem;
   width: 20rem;
@@ -7399,7 +7434,7 @@ h3,
   border-radius: 50%;
   border: 1rem solid #FF0066;
   text-align: center;
-  padding: 0 0 0 3rem;
+  padding: 0 0 0 2rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
@@ -7413,7 +7448,8 @@ h3,
     width: 34rem;
     font-size: 14rem;
     line-height: 30rem;
-    border-width: 2rem;
+    border-width: 1.5rem;
+    padding: 0 0 0 3rem;
   }
 }
 
@@ -7946,8 +7982,8 @@ h3,
 
 @media all and (min-width: 1259px) {
   .partners-grid_title {
-    font-size: 18rem;
-    line-height: 32rem;
+    font-size: 16rem;
+    line-height: 28rem;
   }
 }
 
@@ -8006,16 +8042,6 @@ h3,
 
 .partners-grid_item::after {
   display: none;
-}
-
-.partners-grid_item:only-child {
-  width: 100%;
-}
-
-@media all and (min-width: 767px) {
-  .partners-grid_item:only-child {
-    width: 33%;
-  }
 }
 
 .events {
@@ -9242,7 +9268,7 @@ h3,
     font-size: 12rem;
     line-height: 20rem;
     padding: 18rem 22rem 12rem;
-    margin: 0 -22rem;
+    margin: 0 0 0 -22rem;
   }
 }
 

@@ -1,4 +1,7 @@
 .tabs {
+    @include tablet {
+        padding: 0 0 0 22rem;
+    }
     @include desktop {
         padding: 0 36rem;
     }

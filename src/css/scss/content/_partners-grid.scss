@@ -43,8 +43,8 @@
             padding-top: 30rem;
         }
         @include desktop {
-            font-size: 18rem;
-            line-height: 32rem;
+            font-size: 16rem;
+            line-height: 28rem;
         }
         @include desktop-large {
             font-size: 26rem;
@@ -77,13 +77,6 @@
 
         &::after {
             display: none;
-        }
-
-        &:only-child {
-            width: 100%;
-            @include tablet {
-                width: 33%;
-            }
         }
     }
 }
