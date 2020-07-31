@@ -522,16 +522,13 @@
             right: 0;
             bottom: 22rem;
             width: 200rem;
-            padding: 0 20rem 0 0;
         }
         @include desktop {
             width: 340rem;
-            padding-right: 40rem;
             bottom: 88rem;
         }
         @include desktop-large {
             width: 488rem;
-            padding-right: 60rem;
             bottom: 150rem;
         }
     }

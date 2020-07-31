@@ -218,7 +218,6 @@ function toggleSearch(e) {
     clearSearchField();
 
     if (menu.classList.contains('search-opened')) {
-        console.log(document.querySelector('.search_input'))
         setTimeout(() => {
             document.getElementById('searchInput').focus();
         }, 300)

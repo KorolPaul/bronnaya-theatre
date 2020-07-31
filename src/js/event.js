@@ -45,6 +45,7 @@ if (slider) {
 }
 
 var sliderGallery = document.querySelector('#slider-gallery');
+let sliderTNSGallery = null;
 if (sliderGallery) {
     const currentSlideEl = sliderGallery.querySelector('.slider_counter');
 
@@ -54,7 +55,7 @@ if (sliderGallery) {
         }
     }
 
-    const sliderTNS = tns({
+    sliderTNSGallery = tns({
         autoplay: false,
         animateDelay: 3000,
         container: sliderGallery.querySelector('.slider_track'),
@@ -64,6 +65,7 @@ if (sliderGallery) {
         controls: true,
         mouseDrag: true,
         loop: false,
+        startIndex: sessionStorage.getItem('imageNum') || 1,
         controlsText: ['', ''],
         preventScrollOnTouch: true,
         responsive: {
@@ -81,8 +83,8 @@ if (sliderGallery) {
     });
 
     if (currentSlideEl) {
-        sliderTNS.events.on('transitionEnd', setcounter);
-        sliderTNS.events.on('transitionEnd', setcounter);
+        sliderTNSGallery.events.on('transitionEnd', setcounter);
+        sliderTNSGallery.events.on('transitionEnd', setcounter);
     }
 }
 
@@ -151,6 +153,5 @@ if (shareButtons) {
         const url = button.href;
 
         button.setAttribute('href', url.replace('{XXX}', location.href));
-        console.log(url)
     }
 }
